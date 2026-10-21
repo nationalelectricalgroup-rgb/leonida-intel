@@ -1,0 +1,38 @@
+{
+  "entry_schema": {
+    "id": "stable-slug",
+    "title": "Short factual title",
+    "category": "Release | Characters | World | Community | Shopping | Guide",
+    "status": "confirmed | reported | rumour | debunked | guide",
+    "summary": "Original concise summary, not copied article text",
+    "source_name": "Publisher or creator name",
+    "source_url": "https://...",
+    "source_type": "official | reputable_media | creator | community | retailer",
+    "evidence_note": "What the source directly supports",
+    "confidence": "high | medium | low",
+    "relevance_score": 0,
+    "freshness_checked_at": "ISO-8601 timestamp",
+    "region": "UK | US | global | other",
+    "tags": [
+      "example"
+    ],
+    "related_ids": [
+      "other-entry-id"
+    ],
+    "review_needed": true
+  },
+  "ranking_weights": {
+    "relevance": 0.3,
+    "source_quality": 0.25,
+    "evidence_strength": 0.2,
+    "freshness": 0.15,
+    "distinctiveness_and_usefulness": 0.1
+  },
+  "rules": [
+    "Ranking score never overrides evidence status.",
+    "Official sources should outrank secondary reporting for official announcements.",
+    "Rumours must retain a rumour/theory label unless evidence changes.",
+    "Offers must show currency, region, source URL and last-checked timestamp.",
+    "Post-launch gameplay claims require reproducible evidence or a clearly attributed source."
+  ]
+}
