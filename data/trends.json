@@ -1,0 +1,15 @@
+{
+  "updated_at": null,
+  "market": "GB",
+  "collection_summary": {
+    "unique_items": 0,
+    "news_items": 0,
+    "video_items": 0,
+    "google_trends_matches": 0,
+    "errors": [],
+    "notes": [
+      "Not yet populated by the first scheduled or manual run."
+    ]
+  },
+  "topics": []
+}
