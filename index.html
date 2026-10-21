@@ -78,5 +78,61 @@ document.getElementById("locationList").addEventListener("click",e=>{const b=e.t
 document.getElementById("videoGrid").innerHTML=videos.map(v=>`<article class="card"><span class="tag guide">${v.tag}</span><h3>${v.title}</h3><p>${v.summary}</p><div class="meta">${v.source} · ${v.rank}</div><a class="source" href="${v.url}" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article>`).join("");
 render();
 </script>
+  
+<section id="live-trends" style="max-width:1100px;margin:40px auto;padding:20px;color:inherit;">
+  <h2>Leonida Intel — Trending Now</h2>
+  <p id="trend-status">Loading the latest GTA 6 trends…</p>
+  <div id="trend-list"></div>
+</section>
+
+<script>
+(async function loadLeonidaTrends() {
+  const status = document.getElementById("trend-status");
+  const list = document.getElementById("trend-list");
+
+  try {
+    const response = await fetch("./data/trends.json", {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error("Could not load trend data (HTTP " + response.status + ")");
+    }
+
+    const trends = await response.json();
+
+    if (!Array.isArray(trends) || trends.length === 0) {
+      status.textContent = "No trends are available yet. Check back after the next update.";
+      return;
+    }
+
+    status.textContent = trends.length + " trend entries found.";
+
+    trends.forEach((trend) => {
+      const card = document.createElement("article");
+      card.style.cssText = "padding:16px;margin:12px 0;border:1px solid #7775;border-radius:10px;";
+
+      const heading = document.createElement("h3");
+      heading.textContent = trend.title || trend.topic || "GTA 6 topic";
+      card.appendChild(heading);
+
+      if (trend.url) {
+        const link = document.createElement("a");
+        link.href = trend.url;
+        link.textContent = "Read source";
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        card.appendChild(link);
+      }
+
+      list.appendChild(card);
+    });
+  } catch (error) {
+    status.textContent = "Trend data could not be loaded. Please try again later.";
+    console.error("Leonida Intel trend loader:", error);
+  }
+})();
+</script>
+
 </body>
 </html>
