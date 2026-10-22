@@ -38,18 +38,17 @@ jobs:
         run: python scripts/trend_engine.py
 
 
+
       - name: Save updated trend data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git fetch origin main
-          git reset --hard origin/main
-
           git add data/trends.json data/trend-history.json
 
           if ! git diff --cached --quiet; then
             git commit -m "Update daily trends"
+            git pull --rebase origin main
             git push origin HEAD:main
           else
             echo "No trend-data changes to save."
