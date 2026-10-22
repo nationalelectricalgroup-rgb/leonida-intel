@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: leonida-intel-daily-trends
+  cancel-in-progress: false
+
 jobs:
   update-trends:
     runs-on: ubuntu-latest
@@ -16,31 +20,32 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      - name: Sync with latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Run trend engine
         run: python scripts/trend_engine.py
 
-   
-     
-     
       - name: Save updated trend data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git fetch origin main
-          git reset --soft origin/main
-
           git add data/trends.json data/trend-history.json
 
           if ! git diff --cached --quiet; then
             git commit -m "Update daily trends"
             git push origin HEAD:main
+          else
+            echo "No trend-data changes to save."
           fi
-
-
