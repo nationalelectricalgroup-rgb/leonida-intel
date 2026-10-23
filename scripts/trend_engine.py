@@ -120,6 +120,49 @@ def fetch_rss(url):
         return results, None
     except Exception as exc:
         return [], f"{type(exc).__name__}: {exc}"
+        
+def fetch_youtube_videos(query):
+    api_key = os.environ.get("YOUTUBE_API_KEY")
+    if not api_key:
+        return [], "YOUTUBE_API_KEY secret is missing"
+
+    params = urllib.parse.urlencode({
+        "part": "snippet",
+        "q": query,
+        "type": "video",
+        "maxResults": 10,
+        "order": "date",
+        "key": api_key,
+    })
+    url = "https://www.googleapis.com/youtube/v3/search?" + params
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": USER_AGENT}
+    )
+
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            data = json.loads(response.read(2_000_000).decode("utf-8"))
+
+        results = []
+        for entry in data.get("items", []):
+            snippet = entry.get("snippet", {})
+            video_id = entry.get("id", {}).get("videoId")
+            title = snippet.get("title", "")
+
+            if not video_id or not title:
+                continue
+
+            results.append({
+                "title": title,
+                "url": "https://www.youtube.com/watch?v=" + video_id,
+                "published": snippet.get("publishedAt", ""),
+            })
+
+        return results, None
+
+    except Exception as exc:
+        return [], f"{type(exc).__name__}: {exc}"
 
 def canonical_topic(title):
     lower = re.sub(r"[^a-z0-9\s]", " ", title.lower())
