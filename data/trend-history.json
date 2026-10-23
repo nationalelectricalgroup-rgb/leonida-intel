@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T22:48:45+00:00",
+  "updated_at": "2026-10-23T23:12:51+00:00",
   "days": [
     {
       "date": "2026-10-21",
@@ -1168,9 +1168,9 @@
           "id": "42ade89df03f",
           "name": "GTA 6 characters",
           "status": "active",
-          "trend_score": 99.2,
+          "trend_score": 99.8,
           "evidence_status": "rumour / theory",
-          "mentions_today": 16,
+          "mentions_today": 15,
           "distinct_domains_today": 2,
           "signal_types_today": [
             "news",
@@ -1181,22 +1181,21 @@
           "id": "ff9f866168c4",
           "name": "GTA 6 gameplay",
           "status": "active",
-          "trend_score": 99.2,
+          "trend_score": 99.8,
           "evidence_status": "rumour / theory",
-          "mentions_today": 11,
-          "distinct_domains_today": 2,
+          "mentions_today": 9,
+          "distinct_domains_today": 1,
           "signal_types_today": [
-            "news",
-            "video"
+            "news"
           ]
         },
         {
           "id": "489f608609d1",
           "name": "GTA 6 release date",
           "status": "active",
-          "trend_score": 99.2,
+          "trend_score": 99.8,
           "evidence_status": "rumour / theory",
-          "mentions_today": 10,
+          "mentions_today": 12,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
@@ -1206,59 +1205,31 @@
           "id": "990cfe717cd8",
           "name": "GTA 6 rumours and leaks",
           "status": "active",
-          "trend_score": 99.2,
+          "trend_score": 99.8,
           "evidence_status": "rumour / theory",
-          "mentions_today": 22,
-          "distinct_domains_today": 2,
+          "mentions_today": 19,
+          "distinct_domains_today": 1,
           "signal_types_today": [
-            "news",
-            "video"
+            "news"
           ]
         },
         {
           "id": "ddf8b5b93bde",
           "name": "GTA 6 trailer",
           "status": "active",
-          "trend_score": 99.2,
+          "trend_score": 99.8,
           "evidence_status": "reported / unverified",
-          "mentions_today": 33,
-          "distinct_domains_today": 2,
+          "mentions_today": 25,
+          "distinct_domains_today": 1,
           "signal_types_today": [
-            "news",
-            "video"
-          ]
-        },
-        {
-          "id": "a579a605c05c",
-          "name": "GTA 6 map",
-          "status": "active",
-          "trend_score": 76.7,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 8,
-          "distinct_domains_today": 2,
-          "signal_types_today": [
-            "news",
-            "video"
-          ]
-        },
-        {
-          "id": "dfbbe3923734",
-          "name": "GTA 6 Online",
-          "status": "active",
-          "trend_score": 64.0,
-          "evidence_status": "rumour / theory",
-          "mentions_today": 5,
-          "distinct_domains_today": 2,
-          "signal_types_today": [
-            "news",
-            "video"
+            "news"
           ]
         },
         {
           "id": "4bb38739b1e1",
           "name": "GTA 6 soundtrack",
           "status": "active",
-          "trend_score": 53.1,
+          "trend_score": 53.0,
           "evidence_status": "rumour / theory",
           "mentions_today": 4,
           "distinct_domains_today": 1,
@@ -1267,12 +1238,37 @@
           ]
         },
         {
+          "id": "a579a605c05c",
+          "name": "GTA 6 map",
+          "status": "active",
+          "trend_score": 52.4,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 2,
+          "distinct_domains_today": 2,
+          "signal_types_today": [
+            "news",
+            "video"
+          ]
+        },
+        {
           "id": "c9fe1d4b2741",
           "name": "GTA 6 Extended Look",
           "status": "active",
-          "trend_score": 39.7,
+          "trend_score": 40.6,
           "evidence_status": "reported / unverified",
           "mentions_today": 3,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "dfbbe3923734",
+          "name": "GTA 6 Online",
+          "status": "active",
+          "trend_score": 39.5,
+          "evidence_status": "rumour / theory",
+          "mentions_today": 2,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
@@ -1282,9 +1278,9 @@
           "id": "0c1c85a6eefa",
           "name": "GTA 6 Taking Things",
           "status": "active",
-          "trend_score": 39.7,
+          "trend_score": 32.2,
           "evidence_status": "reported / unverified",
-          "mentions_today": 3,
+          "mentions_today": 2,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
@@ -1294,7 +1290,7 @@
           "id": "7314e268b043",
           "name": "GTA 6 missions",
           "status": "active",
-          "trend_score": 28.8,
+          "trend_score": 28.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 2,
           "distinct_domains_today": 1,
@@ -1306,43 +1302,17 @@
           "id": "20f2ea066cd5",
           "name": "GTA 6 Vice City",
           "status": "active",
-          "trend_score": 26.5,
+          "trend_score": 19.1,
           "evidence_status": "rumour / theory",
-          "mentions_today": 2,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
-        },
-        {
-          "id": "f5225fff03aa",
-          "name": "GTA 6 PC release",
-          "status": "active",
-          "trend_score": 23.4,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "37baee563dba",
-          "name": "GTA 6 Leonida",
-          "status": "active",
-          "trend_score": 18.1,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "0d3994e1dcce",
           "name": "GTA 6 Already Made",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1354,7 +1324,7 @@
           "id": "6a845f559a00",
           "name": "GTA 6 Fans Convinced",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1366,7 +1336,7 @@
           "id": "0fed0b3f5062",
           "name": "GTA 6 Full North",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1378,7 +1348,7 @@
           "id": "5fa2598f7dcb",
           "name": "GTA 6 Guides Hub",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1390,7 +1360,7 @@
           "id": "c5bfa8e0248e",
           "name": "GTA 6 Inbox Ps5",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1402,7 +1372,7 @@
           "id": "b6f48437421b",
           "name": "GTA 6 November Rival",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1414,7 +1384,7 @@
           "id": "3cc79be215db",
           "name": "GTA 6 Now Officially",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1426,7 +1396,7 @@
           "id": "8e4d01f8d79d",
           "name": "GTA 6 Platform Poll",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1438,7 +1408,7 @@
           "id": "aa5f96251301",
           "name": "GTA 6 Things Missed",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1450,7 +1420,7 @@
           "id": "938182c61d9e",
           "name": "GTA 6 Wants Physical",
           "status": "active",
-          "trend_score": 16.8,
+          "trend_score": 16.9,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1462,7 +1432,7 @@
           "id": "6d20306a50b1",
           "name": "GTA 6 Car Appear",
           "status": "active",
-          "trend_score": 16.5,
+          "trend_score": 16.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1471,10 +1441,20 @@
           ]
         },
         {
+          "id": "f5225fff03aa",
+          "name": "GTA 6 PC release",
+          "status": "active",
+          "trend_score": 16.8,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
+        },
+        {
           "id": "17e8416428d7",
           "name": "GTA 6 Pre Orders",
           "status": "active",
-          "trend_score": 16.5,
+          "trend_score": 16.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1486,7 +1466,7 @@
           "id": "a2a4087476fc",
           "name": "GTA 6 Side Activities",
           "status": "active",
-          "trend_score": 16.5,
+          "trend_score": 16.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1498,223 +1478,7 @@
           "id": "581ca4982d75",
           "name": "GTA 6 Almost Still",
           "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "8c8bfb399774",
-          "name": "GTA 6 Can Now",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "b4a97425e5b2",
-          "name": "GTA 6 Cliff Richard",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "ca0b5662cd21",
-          "name": "GTA 6 Cost Billion",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "1a2d2f21e182",
-          "name": "GTA 6 Crash Economy",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "bc90fcb2dced",
-          "name": "GTA 6 Devs Say",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "5511c649efed",
-          "name": "GTA 6 Everything Need",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "505cb7eced6a",
-          "name": "GTA 6 Forget Leg",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "b6b37fbc9e9f",
-          "name": "GTA 6 Fuels Jump",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "27ed9e1bdfb8",
-          "name": "GTA 6 Poll Taking",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "e7fc9b9db4b4",
-          "name": "GTA 6 Predicted Cause",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "559fade78a07",
-          "name": "GTA 6 Price Standard",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "385cc26ce3ce",
-          "name": "GTA 6 Ps5 Lands",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "dd86e2116fa3",
-          "name": "GTA 6 Recap Complete",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "8c792f8b6ecf",
-          "name": "GTA 6 Reportedly Realistic",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "ad4658af458c",
-          "name": "GTA 6 Sold Out",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "182212ea20bf",
-          "name": "GTA 6 These Things",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "5251b899776f",
-          "name": "GTA 6 Two Half",
-          "status": "active",
-          "trend_score": 15.5,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
-        },
-        {
-          "id": "245631c856bb",
-          "name": "GTA 6 Yet Gold",
-          "status": "active",
-          "trend_score": 15.5,
+          "trend_score": 16.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1726,7 +1490,127 @@
           "id": "d9c5d8f64be5",
           "name": "GTA 6 Can Afford",
           "status": "active",
-          "trend_score": 15.3,
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "8c8bfb399774",
+          "name": "GTA 6 Can Now",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "b4a97425e5b2",
+          "name": "GTA 6 Cliff Richard",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "ca0b5662cd21",
+          "name": "GTA 6 Cost Billion",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "1a2d2f21e182",
+          "name": "GTA 6 Crash Economy",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "bc90fcb2dced",
+          "name": "GTA 6 Devs Say",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "5511c649efed",
+          "name": "GTA 6 Everything Need",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "505cb7eced6a",
+          "name": "GTA 6 Forget Leg",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "b6b37fbc9e9f",
+          "name": "GTA 6 Fuels Jump",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "27ed9e1bdfb8",
+          "name": "GTA 6 Poll Taking",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "e7fc9b9db4b4",
+          "name": "GTA 6 Predicted Cause",
+          "status": "active",
+          "trend_score": 16.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1738,7 +1622,79 @@
           "id": "2b93401ce8a3",
           "name": "GTA 6 Prepare Console",
           "status": "active",
-          "trend_score": 15.3,
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "559fade78a07",
+          "name": "GTA 6 Price Standard",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "385cc26ce3ce",
+          "name": "GTA 6 Ps5 Lands",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "dd86e2116fa3",
+          "name": "GTA 6 Recap Complete",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "8c792f8b6ecf",
+          "name": "GTA 6 Reportedly Realistic",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "ad4658af458c",
+          "name": "GTA 6 Sold Out",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "182212ea20bf",
+          "name": "GTA 6 These Things",
+          "status": "active",
+          "trend_score": 16.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1750,7 +1706,31 @@
           "id": "dbecd0b651b3",
           "name": "GTA 6 Tried Get",
           "status": "active",
-          "trend_score": 15.3,
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "5251b899776f",
+          "name": "GTA 6 Two Half",
+          "status": "active",
+          "trend_score": 16.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "245631c856bb",
+          "name": "GTA 6 Yet Gold",
+          "status": "active",
+          "trend_score": 16.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1762,7 +1742,7 @@
           "id": "f721a1391543",
           "name": "GTA 6 Preorders Off",
           "status": "active",
-          "trend_score": 14.5,
+          "trend_score": 16.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1771,20 +1751,10 @@
           ]
         },
         {
-          "id": "926b2d4b611a",
-          "name": "GTA 6 Launch Drain",
-          "status": "active",
-          "trend_score": 12.4,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 0,
-          "distinct_domains_today": 0,
-          "signal_types_today": []
-        },
-        {
           "id": "0bc67687e6f9",
           "name": "GTA 6 Ads Sneak",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 15.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1796,7 +1766,7 @@
           "id": "8e504e184034",
           "name": "GTA 6 Ahead Playstation",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 15.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1805,22 +1775,10 @@
           ]
         },
         {
-          "id": "bc876e6b8db7",
-          "name": "GTA 6 Coming Less",
-          "status": "active",
-          "trend_score": 11.9,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
-        },
-        {
           "id": "330652413dd0",
           "name": "GTA 6 Cops Remember",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 15.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1832,53 +1790,31 @@
           "id": "f256c5860cf4",
           "name": "GTA 6 Everything Know",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 15.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
           ]
-        },
-        {
-          "id": "2b5947c52f1b",
-          "name": "GTA 6 Face Something",
-          "status": "active",
-          "trend_score": 11.9,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 0,
-          "distinct_domains_today": 0,
-          "signal_types_today": []
         },
         {
           "id": "de50a018c6f1",
           "name": "GTA 6 Fans Preordering",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 15.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
-          ]
-        },
-        {
-          "id": "d866881a3d3e",
-          "name": "GTA 6 Fox Angry",
-          "status": "active",
-          "trend_score": 11.9,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
           ]
         },
         {
           "id": "8d5d18980e0c",
           "name": "GTA 6 Fsr Allow",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 15.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1887,10 +1823,46 @@
           ]
         },
         {
-          "id": "013eb924c53d",
-          "name": "GTA 6 Got Crypto",
+          "id": "5abc3e86645c",
+          "name": "GTA 6 Like Call",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 15.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "1f37b33cabd5",
+          "name": "GTA 6 Playstation Console",
+          "status": "active",
+          "trend_score": 15.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "bd574e2e95e7",
+          "name": "GTA 6 Reportedly Tried",
+          "status": "active",
+          "trend_score": 15.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "bfbf9250339c",
+          "name": "GTA 6 Xbox Series",
+          "status": "active",
+          "trend_score": 15.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -1899,10 +1871,72 @@
           ]
         },
         {
-          "id": "5abc3e86645c",
-          "name": "GTA 6 Like Call",
+          "id": "9c58655c7bd9",
+          "name": "GTA 6 Issues Statement",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 14.5,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 1,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "37baee563dba",
+          "name": "GTA 6 Leonida",
+          "status": "active",
+          "trend_score": 13.0,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
+        },
+        {
+          "id": "926b2d4b611a",
+          "name": "GTA 6 Launch Drain",
+          "status": "active",
+          "trend_score": 8.9,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
+        },
+        {
+          "id": "bc876e6b8db7",
+          "name": "GTA 6 Coming Less",
+          "status": "active",
+          "trend_score": 8.6,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
+        },
+        {
+          "id": "2b5947c52f1b",
+          "name": "GTA 6 Face Something",
+          "status": "active",
+          "trend_score": 8.6,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
+        },
+        {
+          "id": "d866881a3d3e",
+          "name": "GTA 6 Fox Angry",
+          "status": "active",
+          "trend_score": 8.6,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
+        },
+        {
+          "id": "013eb924c53d",
+          "name": "GTA 6 Got Crypto",
+          "status": "active",
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -1912,127 +1946,77 @@
           "id": "009a2d678ff2",
           "name": "GTA 6 Might Cost",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "3585529bc1ae",
           "name": "GTA 6 Play Hours",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
-        },
-        {
-          "id": "1f37b33cabd5",
-          "name": "GTA 6 Playstation Console",
-          "status": "active",
-          "trend_score": 11.9,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "23e3cbfa9c45",
           "name": "GTA 6 Por Manejar",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
-        },
-        {
-          "id": "bd574e2e95e7",
-          "name": "GTA 6 Reportedly Tried",
-          "status": "active",
-          "trend_score": 11.9,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "news"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "073b5242e47b",
           "name": "GTA 6 Rydeme Taxi",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "e3bcca383942",
           "name": "GTA 6 Scariest Mystery",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "40d4fdc48bf6",
           "name": "GTA 6 Taking Away",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "2fc15e22c95c",
           "name": "GTA 6 Tornozeleira Cia",
           "status": "active",
-          "trend_score": 11.9,
+          "trend_score": 8.6,
           "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
-        },
-        {
-          "id": "bfbf9250339c",
-          "name": "GTA 6 Xbox Series",
-          "status": "active",
-          "trend_score": 11.9,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 1,
-          "distinct_domains_today": 1,
-          "signal_types_today": [
-            "video"
-          ]
+          "mentions_today": 0,
+          "distinct_domains_today": 0,
+          "signal_types_today": []
         },
         {
           "id": "0a3fdc144b5d",
           "name": "GTA 6 Already Sold",
           "status": "active",
-          "trend_score": 11.2,
+          "trend_score": 8.1,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2042,7 +2026,7 @@
           "id": "3744bb55b3a1",
           "name": "GTA 6 Poked Fun",
           "status": "active",
-          "trend_score": 11.2,
+          "trend_score": 8.1,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2052,7 +2036,7 @@
           "id": "d55dc47e0005",
           "name": "GTA 6 Best Console",
           "status": "active",
-          "trend_score": 8.6,
+          "trend_score": 6.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2062,17 +2046,7 @@
           "id": "5dd1ed5e51a7",
           "name": "GTA 6 Development Sorry",
           "status": "active",
-          "trend_score": 8.6,
-          "evidence_status": "reported / unverified",
-          "mentions_today": 0,
-          "distinct_domains_today": 0,
-          "signal_types_today": []
-        },
-        {
-          "id": "9c58655c7bd9",
-          "name": "GTA 6 Issues Statement",
-          "status": "active",
-          "trend_score": 8.6,
+          "trend_score": 6.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2082,7 +2056,7 @@
           "id": "9ae3d44e0098",
           "name": "GTA 6 Looks Like",
           "status": "active",
-          "trend_score": 8.6,
+          "trend_score": 6.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2092,7 +2066,7 @@
           "id": "10862424ba84",
           "name": "GTA 6 Trigger Billion",
           "status": "active",
-          "trend_score": 8.6,
+          "trend_score": 6.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2102,7 +2076,7 @@
           "id": "f308e296abcf",
           "name": "GTA 6 Cyberpunk Modders",
           "status": "active",
-          "trend_score": 8.1,
+          "trend_score": 5.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2112,7 +2086,7 @@
           "id": "8c2972e3f52b",
           "name": "GTA 6 Feature Lots",
           "status": "active",
-          "trend_score": 8.1,
+          "trend_score": 5.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2122,7 +2096,7 @@
           "id": "9ba1f3c7d306",
           "name": "GTA 6 Making Bloomberg",
           "status": "active",
-          "trend_score": 8.1,
+          "trend_score": 5.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2132,7 +2106,7 @@
           "id": "44d6d1452666",
           "name": "GTA 6 Million People",
           "status": "active",
-          "trend_score": 8.1,
+          "trend_score": 5.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2142,7 +2116,7 @@
           "id": "880b645fbb67",
           "name": "GTA 6 Sensor Tower",
           "status": "active",
-          "trend_score": 8.1,
+          "trend_score": 5.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2152,7 +2126,7 @@
           "id": "0d88fb773851",
           "name": "GTA 6 Sony Patches",
           "status": "active",
-          "trend_score": 8.1,
+          "trend_score": 5.8,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2162,7 +2136,7 @@
           "id": "5a1fa4443a23",
           "name": "GTA 6 Call Duty",
           "status": "active",
-          "trend_score": 6.2,
+          "trend_score": 4.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2172,7 +2146,7 @@
           "id": "e0ab12ea809c",
           "name": "GTA 6 Features Significantly",
           "status": "active",
-          "trend_score": 6.2,
+          "trend_score": 4.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2182,7 +2156,7 @@
           "id": "0c9c1fc4c666",
           "name": "GTA 6 Playstation Version",
           "status": "active",
-          "trend_score": 6.2,
+          "trend_score": 4.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2192,7 +2166,7 @@
           "id": "8d246893708e",
           "name": "GTA 6 Sony Revamped",
           "status": "active",
-          "trend_score": 6.2,
+          "trend_score": 4.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2202,7 +2176,7 @@
           "id": "ec1e5c4e358c",
           "name": "GTA 6 Xbox Cloud",
           "status": "active",
-          "trend_score": 6.2,
+          "trend_score": 4.5,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2212,7 +2186,7 @@
           "id": "daa522f6ec04",
           "name": "GTA 6 Cross Platform",
           "status": "active",
-          "trend_score": 4.5,
+          "trend_score": 3.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2222,7 +2196,7 @@
           "id": "b87ce0d403c5",
           "name": "GTA 6 Launch Day",
           "status": "active",
-          "trend_score": 4.5,
+          "trend_score": 3.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2232,7 +2206,7 @@
           "id": "65f36ac59c87",
           "name": "GTA 6 Might Give",
           "status": "active",
-          "trend_score": 4.5,
+          "trend_score": 3.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2242,7 +2216,7 @@
           "id": "ee4761d47b8d",
           "name": "GTA 6 Playstation Firmware",
           "status": "active",
-          "trend_score": 4.5,
+          "trend_score": 3.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2252,7 +2226,7 @@
           "id": "06144cfd3b0d",
           "name": "GTA 6 Ps5 Gets",
           "status": "active",
-          "trend_score": 4.5,
+          "trend_score": 3.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2262,7 +2236,7 @@
           "id": "0740650f8361",
           "name": "GTA 6 Reunited Daft",
           "status": "active",
-          "trend_score": 4.5,
+          "trend_score": 3.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
@@ -2272,7 +2246,7 @@
           "id": "4bc8029bdb24",
           "name": "GTA 6 Switch Studio",
           "status": "active",
-          "trend_score": 4.5,
+          "trend_score": 3.2,
           "evidence_status": "reported / unverified",
           "mentions_today": 0,
           "distinct_domains_today": 0,
