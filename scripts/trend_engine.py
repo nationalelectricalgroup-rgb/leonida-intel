@@ -219,14 +219,21 @@ def main():
         time.sleep(0.6)
 
     for query in YOUTUBE_QUERIES:
-        url = "https://www.youtube.com/feeds/videos.xml?search_query=" + urllib.parse.quote(query)
-        items, err = fetch_rss(url)
-        if err: errors.append({"source": "YouTube RSS", "error": err})
+        items, err = fetch_youtube_videos(query)
+
+        if err:
+            errors.append({
+                "source": "YouTube Data API",
+                "query": query,
+                "error": err,
+            })
+
         for item in items:
             item["source_type"] = "video"
-            item["source_name"] = "YouTube RSS"
+            item["source_name"] = "YouTube Data API"
             collected.append(item)
             source_counts["video"] += 1
+
         time.sleep(0.6)
 
     # Broad Google Trends daily trending searches feed. It only contributes when
