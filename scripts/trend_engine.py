@@ -153,11 +153,13 @@ def fetch_youtube_videos(query):
             if not video_id or not title:
                 continue
 
-            results.append({
-                "title": title,
-                "url": "https://www.youtube.com/watch?v=" + video_id,
-                "published": snippet.get("publishedAt", ""),
-            })
+        results.append({
+            "title": title,
+            "url": "https://www.youtube.com/watch?v=" + video_id,
+            "video_id": video_id,
+            "channel_name": snippet.get("channelTitle", ""),
+            "published": snippet.get("publishedAt", ""),
+        })
 
         return results, None
 
