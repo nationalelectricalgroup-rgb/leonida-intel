@@ -315,14 +315,12 @@ def main():
 
     CURRENT_FILE.write_text(json.dumps(current_doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     HISTORY_FILE.write_text(json.dumps(history_doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(f"Updated {len(topics)} topics; collected {len(collected)} unique feed items.")
-print(f"Feed errors: {len(errors)}")
-for error in errors:
-    print(f"  ERROR [{error['source']}]: {error['error']}")
-for error in errors:
-    print(f"  ERROR [{error['source']}]: {error['error']}")
-for topic in topics[:15]:
 
+    print(f"Updated {len(topics)} topics; collected {len(collected)} unique feed items.")
+    print(f"Feed errors: {len(errors)}")
+    for error in errors:
+        print(f"  ERROR [{error['source']}]: {error['error']}")
+    for topic in topics[:15]:
         print(f"{topic['status']:8} {topic['trend_score']:5} {topic['name']} [{topic['evidence_status']}]")
 
 if __name__ == "__main__":
