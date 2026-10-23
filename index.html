@@ -136,7 +136,11 @@ render();
 
           const link = document.createElement("a");
           link.href = sample.url;
-          link.textContent = sample.title || "Read source";
+          
+          const isVideo = sample.source_type === "video";
+          link.textContent = (isVideo ? "▶ WATCH VIDEO: " : "📰 READ ARTICLE: ")
+            + (sample.title || "Open source");
+          
           link.target = "_blank";
           link.rel = "noopener noreferrer";
           link.style.cssText = "display:block;margin-top:8px;";
