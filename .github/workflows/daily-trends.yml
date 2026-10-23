@@ -35,6 +35,8 @@ jobs:
           git reset --hard origin/main
 
       - name: Run trend engine
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python scripts/trend_engine.py
 
 
