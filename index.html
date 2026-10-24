@@ -19,6 +19,9 @@ main{padding:22px 0 60px}.section{margin:26px 0 38px}.section-head{display:flex;
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{background:linear-gradient(145deg,var(--panel),#10141c);border:1px solid var(--line);border-radius:16px;padding:18px;min-width:0}.card p{color:var(--muted);margin:8px 0}.tag{display:inline-flex;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;font-weight:800;padding:4px 8px;border-radius:6px;margin-bottom:10px}.confirmed{background:#183b2a;color:#a9f3be}.reported{background:#172f45;color:#9dd7ff}.rumour{background:#44331a;color:#ffda8c}.guide{background:#35264a;color:#dfbaff}.meta{color:var(--muted);font-size:.8rem}.card .rank{float:right;color:var(--accent);font-weight:900}.source{display:inline-block;margin-top:7px;font-size:.88rem}
 .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 16px}.toolbar select{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:10px;border-radius:9px}
 .location-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:15px}.location-list{display:grid;gap:8px}.location-button{text-align:left;background:var(--panel);color:var(--text);border:1px solid var(--line);padding:13px;border-radius:10px;cursor:pointer}.location-button.active{border-color:var(--accent)}.location-detail{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:15px;min-height:210px}.notice{border:1px solid #554628;background:#231d12;border-radius:12px;padding:14px;color:#ffe2a5;font-size:.9rem}.empty{color:var(--muted);padding:20px 0}.footer{border-top:1px solid var(--line);padding:24px 0 38px;color:var(--muted);font-size:.84rem}.footer strong{color:var(--text)}.hide{display:none!important}
+.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.video-card{background:linear-gradient(145deg,var(--panel),#10141c);border:1px solid var(--line);border-radius:16px;overflow:hidden;min-width:0}.video-thumb{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#202735}.video-body{padding:15px}.video-title{font-size:1rem;line-height:1.35;margin:8px 0}.video-meta{color:var(--muted);font-size:.8rem;margin:6px 0}.video-open{display:inline-block;margin-top:8px;font-weight:800}.video-controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 16px}.video-controls select{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:10px;border-radius:9px}.video-label{display:inline-block;background:#172f45;color:#9dd7ff;border-radius:6px;padding:4px 8px;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em}.video-label.official{background:#183b2a;color:#a9f3be}.video-label.speculation{background:#44331a;color:#ffda8c}
+@media(max-width:850px){.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.video-grid{grid-template-columns:1fr}}
 @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.location-grid{grid-template-columns:1fr}nav{gap:9px}}
 @media(max-width:560px){.wrap{padding:0 15px}.nav{align-items:flex-start;flex-direction:column;padding:15px 0}.hero{padding-top:40px}.grid{grid-template-columns:1fr}.search{flex-direction:column}.search button{width:100%}}
 </style>
@@ -37,7 +40,18 @@ main{padding:22px 0 60px}.section{margin:26px 0 38px}.section-head{display:flex;
 <section class="section" id="briefing"><div class="section-head"><div><div class="eyebrow">01 / The essentials</div><h2>Current briefing</h2></div><p>Ranked for importance, not just recency</p></div><div class="grid" id="briefingGrid"></div></section>
 <section class="section" id="database"><div class="section-head"><div><div class="eyebrow">02 / Search & verify</div><h2>Knowledge base</h2></div><p id="resultCount">Browse sourced entries</p></div><div class="toolbar"><select id="categorySelect" aria-label="Filter category"><option value="all">All categories</option><option value="Release">Release & platforms</option><option value="Characters">Characters & story</option><option value="World">World & locations</option><option value="Community">Community & theories</option><option value="Shopping">Editions & offers</option></select><select id="statusSelect" aria-label="Filter evidence status"><option value="all">All evidence labels</option><option value="confirmed">Confirmed</option><option value="reported">Reported</option><option value="rumour">Rumour / theory</option><option value="guide">Guide / reference</option></select></div><div class="grid" id="knowledgeGrid"></div><div id="noResults" class="empty hide">No entries match that search. Try another phrase.</div></section>
 <section class="section" id="map"><div class="section-head"><div><div class="eyebrow">03 / Explore Leonida</div><h2>Location explorer</h2></div><p>Evidence labels matter</p></div><div class="notice">Pre-launch location entries describe places shown or identified in official material. A trailer sighting does not prove exact in-game coordinates, interiors, or gameplay features. This prototype uses a searchable directory, not an official or fully verified interactive map.</div><div class="location-grid" style="margin-top:14px"><div class="location-list" id="locationList"></div><div class="location-detail" id="locationDetail"><div class="eyebrow">Select a location</div><h3>Explore the world, carefully</h3><p class="meta">Choose a place to see its current evidence, context and source links.</p></div></div></section>
-<section class="section" id="videos"><div class="section-head"><div><div class="eyebrow">04 / Watch smarter</div><h2>Videos & community content</h2></div><p>Rank by usefulness and evidence</p></div><div class="grid" id="videoGrid"></div><p class="meta">Video ranking is a placeholder until an automated, source-compliant discovery pipeline is connected. Views alone should never determine the ranking.</p></section>
+<section id="live-trends" class="section">
+  <h2>Leonida Intel — Trending Now</h2>
+  <p id="trend-status">Loading the latest GTA 6 trends…</p>
+  <div id="trend-list"></div>
+</section><section class="section" id="videos">
+  <div class="section-head"><div><div class="eyebrow">04 / Watch smarter</div><h2>Trending videos & community content</h2></div><p>Ranked by relevance and freshness</p></div>
+  <p class="lead" style="font-size:.95rem">Discover GTA 6 videos with thumbnails, creator credit, publication dates and clear provisional content labels. Rankings are automated estimates, not view counts or fact-checks.</p>
+  <div class="video-controls"><select id="videoTypeFilter" aria-label="Filter video content type"><option value="all">All content types</option><option value="official">Official</option><option value="reported">Reported news</option><option value="speculation">Speculation / theory</option><option value="gameplay">Gameplay / guides</option><option value="unverified">Unverified / other</option></select></div>
+  <p id="video-status" class="meta">Loading the latest GTA 6 videos…</p>
+  <div id="video-list" class="video-grid"></div>
+  <p class="meta">Content labels are automatically inferred and may be wrong. Check the original source before treating any claim as fact. We link to creators' original videos.</p>
+</section>
 <section class="section" id="guides"><div class="section-head"><div><div class="eyebrow">05 / Built for launch day</div><h2>Player guides</h2></div><p>Ready to expand after release</p></div><div class="grid"><article class="card"><span class="tag guide">Planned</span><h3>Beginner's guide</h3><p>Controls, settings, early-game priorities and tips validated against the released game.</p><span class="meta">Launch phase · Evidence required</span></article><article class="card"><span class="tag guide">Planned</span><h3>Missions & story</h3><p>Walkthroughs, character connections, choices and ending explanations with spoiler controls.</p><span class="meta">Spoiler labels required</span></article><article class="card"><span class="tag guide">Planned</span><h3>Secrets & collectibles</h3><p>Tested locations, hidden encounters, collectibles and useful maps.</p><span class="meta">Gameplay-verified only</span></article></div></section>
 </main>
 <footer class="footer"><p><strong>LEONIDA INTEL</strong> is an independent fan project and is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive.</p><p>All trademarks belong to their respective owners. We link to sources rather than republish other creators' work. Rumours are labelled as such; offers and facts must show source and last-checked time.</p><p>Prototype v0.1 · Static demo · No tracking, accounts, ads or paid services.</p></footer>
@@ -75,153 +89,122 @@ document.getElementById("quickFilters").addEventListener("click",e=>{const b=e.t
 document.getElementById("locationList").innerHTML=locations.map((l,i)=>`<button class="location-button ${i===0?"active":""}" data-i="${i}"><strong>${l.name}</strong><br><span class="meta">${l.area} · ${labels[l.status]}</span></button>`).join("");
 function showLocation(i){const l=locations[i];document.querySelectorAll(".location-button").forEach((b,j)=>b.classList.toggle("active",i===j));document.getElementById("locationDetail").innerHTML=`<span class="tag ${l.status}">${labels[l.status]}</span><h3>${l.name}</h3><p class="meta">${l.area}</p><p>${l.detail}</p><a class="source" href="${l.url}" target="_blank" rel="noopener noreferrer">Source: ${l.source} ↗</a>`;}
 document.getElementById("locationList").addEventListener("click",e=>{const b=e.target.closest("button[data-i]");if(b)showLocation(Number(b.dataset.i));});
-document.getElementById("videoGrid").innerHTML=videos.map(v=>`<article class="card"><span class="tag guide">${v.tag}</span><h3>${v.title}</h3><p>${v.summary}</p><div class="meta">${v.source} · ${v.rank}</div><a class="source" href="${v.url}" target="_blank" rel="noopener noreferrer">Open resource ↗</a></article>`).join("");
 render();
 </script>
   
-<section id="live-trends" style="max-width:1100px;margin:40px auto;padding:20px;color:inherit;">
-  <h2>Leonida Intel — Trending Now</h2>
-  <p id="trend-status">Loading the latest GTA 6 trends…</p>
-  <div id="trend-list"></div>
-</section>
+
 
   
-<section id="trending-videos" style="max-width:1100px;margin:40px auto;padding:20px;color:inherit;">
-  <h2>Trending Videos</h2>
-  <p id="video-status">Loading the latest GTA 6 videos…</p>
-  <div id="video-list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;"></div>
-</section>
-
 <script>
 (async function loadTrendingVideos() {
   const status = document.getElementById("video-status");
   const list = document.getElementById("video-list");
+  const filter = document.getElementById("videoTypeFilter");
+  if (!status || !list || !filter) return;
 
-  const labels = {
-    official: "Official announcement",
+  const typeLabels = {
+    official: "Official",
     reported: "Reported news",
     speculation: "Speculation / theory",
-    gameplay: "Gameplay / guide"
+    gameplay: "Gameplay / guide",
+    unverified: "Unverified / other"
   };
 
-  try {
-    const response = await fetch("./data/trends.json", {
-      cache: "no-store"
-    });
+  let allVideos = [];
 
-    if (!response.ok) {
-      throw new Error("Could not load trend data");
-    }
+  function textElement(tag, text, className) {
+    const el = document.createElement(tag);
+    el.textContent = text || "";
+    if (className) el.className = className;
+    return el;
+  }
 
-    const data = await response.json();
-    const topics = Array.isArray(data) ? data : data.topics;
-
-    const videos = [];
-    const seen = new Set();
-
-    (topics || []).forEach(topic => {
-      (topic.samples || []).forEach(sample => {
-        if (
-          sample.source_type !== "video" ||
-          !sample.url ||
-          seen.has(sample.url)
-        ) return;
-
-        seen.add(sample.url);
-        videos.push({
-          ...sample,
-          topic: topic.name || topic.title || "GTA 6",
-          topicScore: Number(topic.trend_score) || 0
-        });
-      });
-    });
-
-    videos.sort((a, b) =>
-      b.topicScore - a.topicScore ||
-      String(b.published || "").localeCompare(String(a.published || ""))
+  function renderVideos() {
+    const selected = filter.value;
+    const filtered = allVideos.filter(video =>
+      selected === "all" || (video.content_type || "unverified") === selected
     );
+    list.replaceChildren();
 
-    if (!videos.length) {
-      status.textContent =
-        "No video samples are available in the current topic data yet.";
+    if (!filtered.length) {
+      status.textContent = allVideos.length
+        ? "No videos match this filter. Try another content type."
+        : "No videos are available in the latest saved data yet. Run the daily-trends workflow and check back.";
       return;
     }
 
-    status.textContent = videos.length + " videos found in the saved topic samples.";
+    status.textContent = `${filtered.length} videos · ranking is a heuristic, not a view-count ranking`;
 
-    videos.forEach((video, index) => {
+    filtered.forEach((video, index) => {
       const card = document.createElement("article");
-      card.style.cssText =
-        "border:1px solid #7775;border-radius:12px;overflow:hidden;padding:16px;";
+      card.className = "video-card";
 
       const link = document.createElement("a");
-      link.href = video.url;
+      link.href = video.url || (video.video_id ? `https://www.youtube.com/watch?v=${encodeURIComponent(video.video_id)}` : "#");
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.style.cssText = "color:inherit;text-decoration:none;";
+      link.setAttribute("aria-label", `Watch ${video.title || "GTA 6 video"} on YouTube`);
 
-      const title = document.createElement("h3");
-      title.textContent = video.title || "Watch GTA 6 video";
-      link.appendChild(title);
-
-      const play = document.createElement("p");
-      play.textContent = "▶ Watch on YouTube";
-      play.style.cssText = "font-weight:bold;";
-      link.appendChild(play);
+      const image = document.createElement("img");
+      image.className = "video-thumb";
+      image.loading = index < 6 ? "eager" : "lazy";
+      image.alt = `Thumbnail for ${video.title || "GTA 6 video"}`;
+      image.src = video.thumbnail || (video.video_id ? `https://i.ytimg.com/vi/${encodeURIComponent(video.video_id)}/hqdefault.jpg` : "");
+      image.onerror = () => {
+        image.onerror = null;
+        image.style.display = "none";
+      };
+      link.appendChild(image);
       card.appendChild(link);
 
-      const date = document.createElement("p");
-      const parsedDate = video.published ? new Date(video.published) : null;
-      date.textContent =
-        parsedDate && !Number.isNaN(parsedDate.getTime())
-          ? "Published: " + parsedDate.toLocaleDateString("en-GB")
-          : "Publication date unavailable";
-      card.appendChild(date);
+      const body = document.createElement("div");
+      body.className = "video-body";
 
-      const topic = document.createElement("p");
-      topic.textContent = "Topic: " + video.topic;
-      card.appendChild(topic);
+      const type = video.content_type || "unverified";
+      const label = textElement("span", typeLabels[type] || typeLabels.unverified, `video-label ${type}`);
+      body.appendChild(label);
 
-      const rank = document.createElement("p");
-      rank.textContent = "Video rank: #" + (index + 1);
-      card.appendChild(rank);
+      const title = textElement("h3", video.title || "GTA 6 video");
+      title.className = "video-title";
+      body.appendChild(title);
 
-      const score = document.createElement("p");
-      score.textContent = "Topic trend score: " + video.topicScore;
-      card.appendChild(score);
+      body.appendChild(textElement("p", `Video rank #${video.rank || index + 1} · Topic: ${video.topic || "GTA 6"}`, "video-meta"));
+      body.appendChild(textElement("p", `${video.channel_name || video.channel || "Creator not listed"} · ${video.published ? new Date(video.published).toLocaleDateString("en-GB") : "Publication date unavailable"}`, "video-meta"));
 
-      const titleText = (video.title || "").toLowerCase();
-      let type = "speculation";
-
-      if (/\b(official|rockstar games)\b/.test(titleText)) {
-        type = "official";
-      } else if (/\b(gameplay|walkthrough|tips|guide|mission|ending|secrets)\b/.test(titleText)) {
-        type = "gameplay";
-      } else if (/\b(reports?|reported|confirms?|confirmed|announced|announcement|news)\b/.test(titleText)) {
-        type = "reported";
+      if (video.classification_note) {
+        body.appendChild(textElement("p", video.classification_note, "video-meta"));
+      } else {
+        body.appendChild(textElement("p", "Automated label — check the original video and sources.", "video-meta"));
       }
 
-      const label = document.createElement("p");
-      label.textContent = "Content type: " + labels[type];
-      label.style.cssText = "font-weight:bold;";
-      card.appendChild(label);
-
-      if (video.channel_name) {
-        const channel = document.createElement("p");
-        channel.textContent = "Channel: " + video.channel_name;
-        card.appendChild(channel);
-      }
-
+      const watch = document.createElement("a");
+      watch.className = "video-open";
+      watch.href = link.href;
+      watch.target = "_blank";
+      watch.rel = "noopener noreferrer";
+      watch.textContent = "▶ Watch on YouTube ↗";
+      body.appendChild(watch);
+      card.appendChild(body);
       list.appendChild(card);
     });
+  }
+
+  filter.addEventListener("change", renderVideos);
+
+  try {
+    const response = await fetch("./data/trends.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`Could not load trend data (HTTP ${response.status})`);
+    const data = await response.json();
+    allVideos = Array.isArray(data.videos) ? data.videos.slice() : [];
+
+    allVideos.sort((a, b) => (Number(a.rank) || 9999) - (Number(b.rank) || 9999));
+    renderVideos();
   } catch (error) {
-    status.textContent =
-      "Video data could not be loaded. Please try again later.";
+    status.textContent = "Video data could not be loaded. Please try again after the site data is available.";
     console.error("Leonida Intel video loader:", error);
   }
 })();
 </script>
-
 
 <script>
 
