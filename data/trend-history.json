@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T10:16:29+00:00",
+  "updated_at": "2026-10-24T10:21:38+00:00",
   "days": [
     {
       "date": "2026-10-21",
@@ -2261,9 +2261,9 @@
           "id": "42ade89df03f",
           "name": "GTA 6 characters",
           "status": "active",
-          "trend_score": 100,
+          "trend_score": 46.4,
           "evidence_status": "mixed evidence — review sources",
-          "mentions_today": 20,
+          "mentions_today": 16,
           "distinct_domains_today": 2,
           "signal_types_today": [
             "news",
@@ -2274,22 +2274,9 @@
           "id": "ff9f866168c4",
           "name": "GTA 6 gameplay",
           "status": "active",
-          "trend_score": 100,
+          "trend_score": 46.4,
           "evidence_status": "mixed evidence — review sources",
-          "mentions_today": 14,
-          "distinct_domains_today": 2,
-          "signal_types_today": [
-            "news",
-            "video"
-          ]
-        },
-        {
-          "id": "489f608609d1",
-          "name": "GTA 6 release date",
-          "status": "active",
-          "trend_score": 100,
-          "evidence_status": "mixed evidence — review sources",
-          "mentions_today": 11,
+          "mentions_today": 13,
           "distinct_domains_today": 2,
           "signal_types_today": [
             "news",
@@ -2300,7 +2287,7 @@
           "id": "990cfe717cd8",
           "name": "GTA 6 rumours and leaks",
           "status": "active",
-          "trend_score": 100,
+          "trend_score": 46.4,
           "evidence_status": "rumour / theory",
           "mentions_today": 11,
           "distinct_domains_today": 2,
@@ -2313,9 +2300,9 @@
           "id": "ddf8b5b93bde",
           "name": "GTA 6 trailer",
           "status": "active",
-          "trend_score": 100,
+          "trend_score": 46.4,
           "evidence_status": "mixed evidence — review sources",
-          "mentions_today": 27,
+          "mentions_today": 32,
           "distinct_domains_today": 2,
           "signal_types_today": [
             "news",
@@ -2326,9 +2313,9 @@
           "id": "a579a605c05c",
           "name": "GTA 6 map",
           "status": "active",
-          "trend_score": 99.6,
+          "trend_score": 46.3,
           "evidence_status": "reported / unverified",
-          "mentions_today": 7,
+          "mentions_today": 8,
           "distinct_domains_today": 2,
           "signal_types_today": [
             "news",
@@ -2336,37 +2323,24 @@
           ]
         },
         {
-          "id": "8d8e4de71414",
-          "name": "GTA 6 general discussion",
+          "id": "489f608609d1",
+          "name": "GTA 6 release date",
           "status": "active",
-          "trend_score": 75.0,
+          "trend_score": 39.2,
           "evidence_status": "mixed evidence — review sources",
-          "mentions_today": 63,
-          "distinct_domains_today": 2,
-          "signal_types_today": [
-            "news",
-            "video"
-          ]
-        },
-        {
-          "id": "dfbbe3923734",
-          "name": "GTA 6 Online",
-          "status": "active",
-          "trend_score": 43.5,
-          "evidence_status": "mixed evidence — review sources",
-          "mentions_today": 2,
+          "mentions_today": 10,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
           ]
         },
         {
-          "id": "4bb38739b1e1",
-          "name": "GTA 6 soundtrack",
+          "id": "8d8e4de71414",
+          "name": "GTA 6 general discussion",
           "status": "active",
-          "trend_score": 41.0,
-          "evidence_status": "mixed evidence — review sources",
-          "mentions_today": 3,
+          "trend_score": 34.2,
+          "evidence_status": "reported / unverified",
+          "mentions_today": 8,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
@@ -2376,7 +2350,7 @@
           "id": "20f2ea066cd5",
           "name": "GTA 6 Vice City",
           "status": "active",
-          "trend_score": 39.7,
+          "trend_score": 29.7,
           "evidence_status": "mixed evidence — review sources",
           "mentions_today": 2,
           "distinct_domains_today": 2,
@@ -2386,12 +2360,36 @@
           ]
         },
         {
+          "id": "4bb38739b1e1",
+          "name": "GTA 6 soundtrack",
+          "status": "active",
+          "trend_score": 25.3,
+          "evidence_status": "mixed evidence — review sources",
+          "mentions_today": 3,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
+          "id": "dfbbe3923734",
+          "name": "GTA 6 Online",
+          "status": "active",
+          "trend_score": 23.2,
+          "evidence_status": "mixed evidence — review sources",
+          "mentions_today": 2,
+          "distinct_domains_today": 1,
+          "signal_types_today": [
+            "news"
+          ]
+        },
+        {
           "id": "7314e268b043",
           "name": "GTA 6 missions",
           "status": "active",
-          "trend_score": 29.0,
+          "trend_score": 17.0,
           "evidence_status": "reported / unverified",
-          "mentions_today": 2,
+          "mentions_today": 1,
           "distinct_domains_today": 1,
           "signal_types_today": [
             "news"
@@ -2401,7 +2399,7 @@
           "id": "37baee563dba",
           "name": "GTA 6 Leonida",
           "status": "active",
-          "trend_score": 17.0,
+          "trend_score": 14.6,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
@@ -2413,7 +2411,7 @@
           "id": "f5225fff03aa",
           "name": "GTA 6 PC release",
           "status": "active",
-          "trend_score": 14.3,
+          "trend_score": 14.1,
           "evidence_status": "reported / unverified",
           "mentions_today": 1,
           "distinct_domains_today": 1,
