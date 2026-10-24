@@ -209,24 +209,40 @@ def fetch_youtube_videos(query: str) -> tuple[list[dict], str | None]:
 
 
 def canonical_topic(title: str) -> str | None:
-    lower = re.sub(r"[^a-z0-9\s]", " ", title.lower())
+    """Map genuinely GTA VI-related titles to a controlled topic taxonomy.
+
+    Deliberately rejects titles that merely compare something to GTA 6 or use
+    the game as a style reference. This is a relevance filter, not a fact-check.
+    """
+    lower = re.sub(r"[^a-z0-9\s]", " ", (title or "").lower())
     lower = re.sub(r"\s+", " ", lower).strip()
-    if not any(term in lower for term in (
-        "gta 6", "gta vi", "grand theft auto vi", "grand theft auto 6"
-    )):
+    game_terms = ("gta 6", "gta vi", "grand theft auto vi", "grand theft auto 6")
+    if not any(term in lower for term in game_terms):
         return None
 
-    for needle, topic in sorted(TOPIC_ALIASES.items(), key=lambda item: len(item[0]), reverse=True):
-        if needle in lower:
+    # Common false positives where GTA is only a comparison, parody, or side mention.
+    reject_phrases = (
+        "gta 6 style", "gta-style", "gta 6 inspired", "gta 6 inspired",
+        "gta 6 parody", "parody trailer", "meme coin", "shrek 2",
+        "style trailer", "like gta 6", "gta 6-like", "gta 6 vs gta 5",
+    )
+    if any(phrase in lower for phrase in reject_phrases):
+        return None
+
+    # Require a direct game-specific cue. Avoid generating categories from arbitrary
+    # leftover title words such as “Taking Things” or “Almost Still”.
+    aliases = sorted(TOPIC_ALIASES.items(), key=lambda item: len(item[0]), reverse=True)
+    for needle, topic in aliases:
+        if re.search(r"\b" + re.escape(needle) + r"\b", lower):
             return topic
 
-    words = [
-        word for word in lower.split()
-        if word not in STOPWORDS and len(word) > 2 and not word.isdigit()
-    ]
-    if not words:
-        return "GTA 6 general discussion"
-    return "GTA 6 " + " ".join(words[:2]).title()
+    if any(term in lower for term in ("vice city", "leonida", "lucia", "jason", "rockstar")):
+        if "vice city" in lower:
+            return "GTA 6 Vice City"
+        if "leonida" in lower:
+            return "GTA 6 Leonida"
+        return "GTA 6 characters"
+    return "GTA 6 general discussion"
 
 
 def classify_evidence(title: str, url: str) -> str:
@@ -381,6 +397,19 @@ def main() -> None:
             unique[url] = item
     collected = list(unique.values())
 
+    # Apply relevance filtering before aggregation and video ranking. This prevents
+    # unrelated parody/comparison stories from polluting topics and the video feed.
+    rejected_count = 0
+    relevant_items = []
+    for item in collected:
+        topic = canonical_topic(item.get("title", ""))
+        if topic is None:
+            rejected_count += 1
+            continue
+        item["topic"] = topic
+        relevant_items.append(item)
+    collected = relevant_items
+
     previous = load_json(CURRENT_FILE, {"topics": [], "videos": [], "updated_at": None})
     history_doc = load_json(HISTORY_FILE, {"days": []})
     previous_topics = {
@@ -397,8 +426,15 @@ def main() -> None:
         observations[topic].append(item)
 
     today = datetime.now(timezone.utc).date().isoformat()
+    allowed_historical_topics = {
+        "GTA 6 release date", "GTA 6 trailer", "GTA 6 map", "GTA 6 Vice City",
+        "GTA 6 Leonida", "GTA 6 characters", "GTA 6 gameplay", "GTA 6 Online",
+        "GTA 6 PC release", "GTA 6 missions", "GTA 6 vehicles",
+        "GTA 6 soundtrack", "GTA 6 rumours and leaks", "GTA 6 general discussion",
+    }
     all_topic_names = set(observations) | {
         topic.get("name", "") for topic in previous.get("topics", [])
+        if topic.get("name", "") in allowed_historical_topics
     }
     topics = []
 
@@ -452,16 +488,18 @@ def main() -> None:
             status = "archived"
 
         evidence_counts = Counter(item["evidence_status"] for item in obs)
-        if evidence_counts.get("debunked"):
-            evidence_status = "debunked"
-        elif evidence_counts.get("official_source_needs_review"):
+        if not obs:
+            evidence_status = old.get("evidence_status", "unverified")
+        elif evidence_counts.get("debunked", 0) == len(obs):
+            evidence_status = "debunked — review sources"
+        elif evidence_counts.get("official_source_needs_review", 0) == len(obs):
             evidence_status = "official source — verify claim"
-        elif evidence_counts.get("rumour_or_theory"):
+        elif evidence_counts.get("rumour_or_theory", 0) == len(obs):
             evidence_status = "rumour / theory"
-        elif obs:
+        elif evidence_counts.get("reported_or_unverified", 0) == len(obs):
             evidence_status = "reported / unverified"
         else:
-            evidence_status = old.get("evidence_status", "unverified")
+            evidence_status = "mixed evidence — review sources"
 
         samples = sorted(
             obs,
@@ -552,12 +590,15 @@ def main() -> None:
             "video_items": source_counts["video"],
             "saved_unique_videos": len(videos),
             "google_trends_matches": source_counts["search_trend"],
+            "irrelevant_items_filtered": rejected_count,
             "errors": errors,
             "notes": [
                 "Google News RSS results are content-discovery signals, not Google search volume.",
                 "Google Trends feed is a broad daily trending-search feed; only directly matching GTA 6 titles are included.",
                 "Video ranks are heuristic scores based on topic score and freshness, not YouTube view counts or platform-wide popularity.",
                 "Video classifications are title/source heuristics and are not fact verification.",
+                "A relevance filter rejects obvious parody/comparison false positives; manual review is still needed.",
+                "Topic evidence labels summarize source-title heuristics and do not verify every claim.",
                 "Official-looking channel labels should be checked; an official source does not automatically make every claim true.",
                 "Only titles, URLs, thumbnail URLs, channel names and feed metadata are retained; no full article text or video is copied.",
             ],
@@ -600,6 +641,7 @@ def main() -> None:
         f"Updated {len(topics)} topics; collected {len(collected)} unique feed items; "
         f"saved {len(videos)} unique videos."
     )
+    print(f"Filtered obvious irrelevant items: {rejected_count}")
     print(f"Feed errors: {len(errors)}")
     for error in errors:
         print(
