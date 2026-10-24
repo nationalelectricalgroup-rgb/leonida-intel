@@ -1,2 +1,69 @@
-
-const DATA_URL='./data/trends.json';let allVideos=[];let activeVideoType='all';const $=id=>document.getElementById(id);const safe=(v,f='')=>typeof v==='string'&&v.trim()?v.trim():f;function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}function dateLabel(value){if(!value)return 'Date unavailable';const d=new Date(value);return Number.isNaN(d.getTime())?'Date unavailable':d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});}function contentType(v){const e=safe(v.content_type).toLowerCase();if(['official','reported','speculation','gameplay'].includes(e))return e;const t=(safe(v.title)+' '+safe(v.channel_name)).toLowerCase();if(/rockstar games|official trailer|official account/.test(t))return'official';if(/gameplay|walkthrough|tips|guide|mission|ending|secrets|how to/.test(t))return'gameplay';if(/report|confirmed|announced|news|update/.test(t))return'reported';return'speculation';}function typeLabel(t){return({official:'Official source',reported:'News / report',speculation:'Theory / speculation',gameplay:'Gameplay / guide'})[t]||'Community content';}function thumb(v){const u=safe(v.thumbnail)||(v.video_id?'https://i.ytimg.com/vi/'+encodeURIComponent(v.video_id)+'/hqdefault.jpg':'');return u?`<img src="${esc(u)}" alt="" loading="lazy" onerror="this.remove()">`:'';}function videoCard(v,i){const t=contentType(v),title=safe(v.title,'Watch GTA VI video'),url=safe(v.url,'videos.html'),topic=safe(v.topic,'GTA VI'),channel=safe(v.channel_name||v.source_name,'Video creator'),date=dateLabel(v.published||v.published_at);return `<article class="content-card"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="Watch ${esc(title)}"><div class="image">${thumb(v)}<span class="play-small">▶</span></div></a><div class="body"><div class="meta"><span class="tag ${t}">${esc(safe(v.content_label,typeLabel(t)))}</span><span class="rank">#${i+1}</span></div><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)}</a></h3><p>${esc(channel)} · ${esc(date)}<br>${esc(topic)}</p><div class="meta"><span>Ranked by relevance</span><a class="card-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Watch ↗</a></div></div></article>`;}function renderVideos(){const el=$('videoGrid');if(!el)return;const list=allVideos.filter(v=>activeVideoType==='all'||contentType(v)===activeVideoType);el.innerHTML=list.length?list.slice(0,24).map(videoCard).join():'<div class="empty">No videos in this category yet. Try another filter.</div>';const status=$('videoStatus');if(status)status.textContent=`Showing ${Math.min(24,list.length)} of ${list.length} videos. Content labels and rankings are automated estimates.`;const hero=allVideos.find(v=>safe(v.thumbnail)||(v.video_id));if(hero&&$('heroVideoImage')){$('heroVideoImage').src=safe(hero.thumbnail)||(hero.video_id?'https://i.ytimg.com/vi/'+encodeURIComponent(hero.video_id)+'/hqdefault.jpg':'');$('heroVideoCaption').textContent=safe(hero.title,'Featured GTA VI video');$('heroVideoLink').href=safe(hero.url,'videos.html');}}function trendCard(t,i){const title=safe(t.name||t.title,'GTA VI topic'),samples=Array.isArray(t.samples)?t.samples:[],source=samples.find(s=>s.url),url=source?safe(source.url):'https://www.rockstargames.com/VI',score=Number(t.trend_score),status=safe(t.evidence_status,'community discussion').replace(/_/g,' ');return `<article class="content-card"><div class="body"><div class="meta"><span class="tag ${/confirmed|official/.test(status)?'official':/rumou|specul|unverified/.test(status)?'speculation':'reported'}">${esc(status)}</span><span class="rank">#${i+1}</span></div><h3>${esc(title)}</h3><p>${esc(safe(t.summary||t.description,source?safe(source.title,'Collected source related to this topic'):'Automatically collected topic. Open the source to inspect it.'))}</p><div class="meta"><span>${Number.isFinite(score)?Math.round(score)+' trend points':''}</span><a class="card-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Explore ↗</a></div></div></article>`;}async function loadData(){try{const r=await fetch(DATA_URL,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json(),topics=Array.isArray(d)?d:(Array.isArray(d.topics)?d.topics:[]);allVideos=Array.isArray(d.videos)?d.videos:[];if(!allVideos.length){const seen=new Set();topics.forEach(t=>(t.samples||[]).forEach(s=>{if(s.source_type==='video'&&s.url&&!seen.has(s.url)){seen.add(s.url);allVideos.push({...s,topic:t.name||t.title||'GTA VI',topic_score:t.trend_score});}}));}allVideos.sort((a,b)=>(Number(b.video_rank_score??b.topic_score??b.topicScore)||0)-(Number(a.video_rank_score??a.topic_score??a.topicScore)||0)||String(b.published||'').localeCompare(String(a.published||'')));renderVideos();const tg=$('trendGrid');if(tg){const ranked=[...topics].sort((a,b)=>(Number(b.trend_score)||0)-(Number(a.trend_score)||0));tg.innerHTML=ranked.length?ranked.slice(0,12).map(trendCard).join():'<div class="empty">No trend topics in the latest saved data.</div>';const st=$('trendStatus');if(st)st.textContent=`Loaded ${topics.length} topics and ${allVideos.length} videos from the latest saved run.`;}}catch(e){for(const id of ['videoGrid','trendGrid'])if($(id))$(id).innerHTML='<div class="empty">Saved data could not be loaded. Check that data/trends.json is deployed.</div>';for(const id of ['videoStatus','trendStatus'])if($(id))$(id).textContent='Data unavailable right now.';console.error('Leonida Intel data:',e);}}const filters=$('videoFilters');if(filters)filters.addEventListener('click',e=>{const b=e.target.closest('button[data-type]');if(!b)return;activeVideoType=b.dataset.type;filters.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));renderVideos();});loadData();
+(() => {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const escapeHTML = (value) => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const text = (value, fallback='') => typeof value === 'string' && value.trim() ? value.trim() : fallback;
+  const number = value => { const n = Number(value); return Number.isFinite(n) ? n : 0; };
+  function setActiveNav(){
+    const page = location.pathname.split('/').pop() || 'index.html';
+    const key = page === 'missions.html' ? 'missions' : page === 'newsletter.html' ? 'newsletter' : 'home';
+    document.querySelectorAll('[data-nav]').forEach(a => { if(a.dataset.nav === key) a.setAttribute('aria-current','page'); });
+  }
+  function setupMenu(){
+    const button = document.querySelector('.menu-toggle'); const nav = $('site-nav');
+    if(!button || !nav) return;
+    button.addEventListener('click', () => { const open = button.getAttribute('aria-expanded') !== 'true'; button.setAttribute('aria-expanded', String(open)); nav.classList.toggle('is-open', open); });
+    nav.addEventListener('click', event => { if(event.target.closest('a')) { button.setAttribute('aria-expanded','false'); nav.classList.remove('is-open'); } });
+  }
+  function labelFor(topic){
+    const raw = text(topic.evidence_status || topic.content_label || topic.status).toLowerCase().replace(/[_-]/g,' ');
+    if(/official|confirmed/.test(raw)) return ['Official / confirmed','status-official'];
+    if(/report/.test(raw)) return ['Reported · unverified','status-reported'];
+    if(/rumou|theor|speculat|unverified|community/.test(raw)) return ['Theory / unverified','status-theory'];
+    return ['Community discussion','status-reported'];
+  }
+  function getTopics(data){
+    if(Array.isArray(data)) return data;
+    if(data && Array.isArray(data.topics)) return data.topics;
+    if(data && Array.isArray(data.trends)) return data.trends;
+    return [];
+  }
+  function relevantTopic(t){
+    const title = text(t.name || t.title || t.topic).toLowerCase();
+    const sampleTitles = Array.isArray(t.samples) ? t.samples.map(s=>text(s.title)).join(' ').toLowerCase() : '';
+    const summary = text(t.summary || t.description).toLowerCase();
+    const hay = `${title} ${sampleTitles} ${summary}`;
+    // Keep the homepage specifically about GTA VI; avoid unrelated trend items (e.g. other games).
+    if(/shrek|crypto|bitcoin|politics|weather/.test(hay)) return false;
+    return /gta\s*6|gta\s*vi|grand theft auto|leonida|vice city|rockstar games/.test(hay);
+  }
+  function topicCard(topic, index){
+    const title = text(topic.name || topic.title || topic.topic, 'GTA VI update');
+    const [label, cls] = labelFor(topic);
+    const score = number(topic.trend_score ?? topic.score);
+    const sample = Array.isArray(topic.samples) ? topic.samples.find(s => s && typeof s.url === 'string' && /^https?:\/\//i.test(s.url)) : null;
+    const sourceUrl = sample ? sample.url : 'https://www.rockstargames.com/VI';
+    const description = text(topic.summary || topic.description || (sample && sample.title), 'Open the source to review the original context.');
+    return `<article class="trend-card"><span class="status-pill ${cls}">${escapeHTML(label)}</span><h3>${escapeHTML(title)}</h3><p>${escapeHTML(description)}</p><div class="card-bottom"><span class="rank">${score > 0 ? `${Math.round(score)} trend points` : 'Latest topic'}</span><a href="${escapeHTML(sourceUrl)}" target="_blank" rel="noopener noreferrer">Read source ↗</a></div></article>`;
+  }
+  async function loadHomeTrends(){
+    const grid = $('home-trends'); if(!grid) return;
+    const status = $('trend-status');
+    try {
+      const response = await fetch('./data/trends.json', {cache:'no-store'});
+      if(!response.ok) throw new Error(`Data request failed (${response.status})`);
+      const data = await response.json();
+      const topics = getTopics(data).filter(relevantTopic);
+      topics.sort((a,b)=>number(b.trend_score ?? b.score)-number(a.trend_score ?? a.score));
+      const selected = topics.slice(0,3);
+      if(!selected.length){ grid.innerHTML = '<article class="trend-card"><span class="status-pill status-prep">NO VERIFIED MATCHES</span><h3>We’re checking for useful updates</h3><p>No clearly relevant GTA VI topics are available in the latest saved run. We would rather show fewer items than fill the page with unrelated stories.</p><div class="card-bottom"><span class="rank">Data refreshes automatically</span><a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">Official GTA VI page ↗</a></div></article>'; }
+      else grid.innerHTML = selected.map(topicCard).join('');
+      if(status) status.textContent = `Showing ${selected.length} relevant topic${selected.length===1?'':'s'} from the latest saved data. Labels are automated and should be checked against the linked source.`;
+    } catch(error) {
+      grid.innerHTML = '<article class="trend-card"><span class="status-pill status-prep">TEMPORARILY UNAVAILABLE</span><h3>Latest topics could not load</h3><p>The saved trend file is not available right now. You can still explore the player hub and official GTA VI source.</p><div class="card-bottom"><span class="rank">Data unavailable</span><a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">Official source ↗</a></div></article>';
+      if(status) status.textContent = 'Trend data could not be loaded. The rest of the website remains available.';
+      console.error('Leonida Intel trend data:', error);
+    }
+  }
+  document.addEventListener('DOMContentLoaded', () => { setActiveNav(); setupMenu(); loadHomeTrends(); });
+})();
