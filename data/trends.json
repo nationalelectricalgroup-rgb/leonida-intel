@@ -1,18 +1,21 @@
 {
-  "updated_at": "2026-10-24T10:14:18+00:00",
+  "updated_at": "2026-10-24T10:16:29+00:00",
   "market": "GB",
   "collection_summary": {
-    "unique_items": 179,
+    "unique_items": 164,
     "news_items": 160,
     "video_items": 40,
-    "saved_unique_videos": 40,
+    "saved_unique_videos": 37,
     "google_trends_matches": 0,
+    "irrelevant_items_filtered": 13,
     "errors": [],
     "notes": [
       "Google News RSS results are content-discovery signals, not Google search volume.",
       "Google Trends feed is a broad daily trending-search feed; only directly matching GTA 6 titles are included.",
       "Video ranks are heuristic scores based on topic score and freshness, not YouTube view counts or platform-wide popularity.",
       "Video classifications are title/source heuristics and are not fact verification.",
+      "A relevance filter rejects obvious parody/comparison false positives; manual review is still needed.",
+      "Topic evidence labels summarize source-title heuristics and do not verify every claim.",
       "Official-looking channel labels should be checked; an official source does not automatically make every claim true.",
       "Only titles, URLs, thumbnail URLs, channel names and feed metadata are retained; no full article text or video is copied."
     ]
@@ -23,16 +26,18 @@
       "name": "GTA 6 characters",
       "status": "active",
       "trend_score": 100,
-      "evidence_status": "rumour / theory",
+      "evidence_status": "mixed evidence — review sources",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 10,
-      "distinct_domains_today": 1,
+      "mentions_today": 20,
+      "distinct_domains_today": 2,
       "signal_types_today": [
-        "news"
+        "news",
+        "video"
       ],
       "source_names_today": [
-        "Google News RSS"
+        "Google News RSS",
+        "YouTube Data API"
       ],
       "first_seen": "2026-10-21",
       "last_seen": "2026-10-24",
@@ -50,44 +55,44 @@
           "evidence_status": "reported_or_unverified"
         },
         {
-          "title": "GTA 6 devs rode in a helicopter over a Beyoncé concert and met 'colorful characters' who revealed their crimes while researching Miami — 'As soon as they know where you're from, they just want to tell you every crime they or their friends have ever done' - TechRadar",
-          "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxPNXBGeGg3SUZaN0hDMlBNT0NGZnZwVkstR3duaC0ySkhxVGRJU3lHLXZMR29Ga0FKSjgyYVVEMFotYkRLWVpzN0YtWFBZM1VxbXFzc3h5cHNEV3dOaFI2RUxTMUxOR3BoSjE0eDF2QVNqR0k3eUdsUVl1NHVLbllTaWcyTkVvREhkZV9mQ1lia3RhMkhCbnE3VGdja2dlTV9lM05RVjBWeXdmcnpLclVkcTZhb3ZVcDFVakN3UjVmS3lheVF5NnRnMV9zYkUxRmMtNVd6ZDlkWlNxUnUyMzI0VzZzUXcwVE0xMjVBaGlNVmJ1MFpxbndyeW9tSkRocXMyR0YtcEF1UkltUGREWnhRLTJ1TV9BWUJkdDFqcVNfYUlxQ24zbXdhUzk0WnUzeGdKQVpTMkdkdnZBSDlKUGcyeUVyUTZaaXk0NG9DMXdOZGk3My1kcXpNR3FOeHZfbkFvSndockVoN1dnOTlaQkgwaEZxQ0pHczkxUjN0VWVZdXEwaEt6LWFUQUFiQzJ4cHQx?oc=5",
-          "published": "Tue, 20 Oct 2026 16:30:59 GMT",
+          "title": "All 25+ GTA 6 Side Activities Confirmed By Rockstar (So Far) - SVG",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lVWNwZmVrdkt0LVYyMnRmYzNqWko1SjZYekMwcWVBRV9fdDVWcmV3cmtiaVJ3RnQ0c0R5d2ttX3FuQ09pdXNmc0FidFc2MlY3WjNRS2FZeHkxREVhaHZUVUJBRGxncU11bjh4dldUUnRnVWczV0U2MA?oc=5",
+          "published": "Wed, 21 Oct 2026 20:30:31 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 characters",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "Rockstar Games reportedly tried to reunite Daft Punk for GTA 6 - Mixmag",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSHptUUpLRUU5aG1SNzRzM0hXZktEbGh6OXAzWUdqTUJMYm4wTjNMbEZ2Y2ZIWklmTlBWU2ZVR1BmNFl2dzdjaDQ1VlViZTRZanVoYm9lOG9hSlVObmM5V0RYZjhXQjVuR3F3bVFWdDBESWtvSjc0QXZiMWVfZER0aUxUUGg?oc=5",
+          "published": "Wed, 21 Oct 2026 13:41:14 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 characters",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "GTA 6 Pre-Orders Are 146% More Than Any Other Game - RockstarINTEL",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUUhYVjRXdTFpUzBlQS1qMkNvbHRsdFkzaUV1ZlVlUTUzNWZ5NWw3V0tXSmlqa0EtM3g0Q0RWQ050bzlGdnkzbVpBdjFkTzNSd3ZuWkpLamNsd1lzaUNOdUJoUnFJZHBoMERXWmhQbHozenBNQmhCYzNiangxUkg5NUdTendqcWpWQzBF?oc=5",
+          "published": "Wed, 21 Oct 2026 10:22:20 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 characters",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "Rockstar wants physical intimacy 'done right' in GTA 6 as it confirms nude scene - Metro.co.uk",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMzhEdVJVNWJEckQya0hOVmRHdThkZzU0QWt6bzZIc1lEY2dkbkNUcXdZaXhqZlpVb0FLd3YyQzN2WnFybFVlYjVPWl9Makdpb09MU1FyOGN6VGJFTGg1TEpkdUQ5WHJiVk9MTEZXdHpXMEtWY2YyNUFHbHBmdVk0S2NqZkZ1QUwzdm03a3ZzcTd3dkpVQ0ZtNTU1X2xvVXppa1F0bV9Ea3JCMXY2TVlB0gG0AUFVX3lxTE5NZS1BZDdzSlppaUxzZUhrSWxiRHRCbkpfTWNhRXQ3WExDOWdpbmVkRmRZd21NbExlZm50M1NhclRtYlJXc2FLaFFFN3JtM3V3d1NORGhaSkNZQVpuVkFSLV9RMTdTd1AxNTNya3FRWjc5cS1EYm56UjFhQ191UEs0cnRoY3VqWmltUGJMVkpfbV94V1p5M1pmZXlsOUZaRS1PS2dQY3FEZU9sOXhfYTN2Ujhneg?oc=5",
+          "published": "Wed, 07 Oct 2026 07:00:00 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
           "query": "\"GTA 6\" characters OR locations OR missions",
           "topic": "GTA 6 characters",
           "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "GTA 6 Characters: Everyone Confirmed So Far - Stevivor",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE41SVk0UUs4bl9HdnByaUxqSzlybFpiNTdsdDFVVE90TmRSV2JpOHlYNXRSQkxDR19Kcm5jNjFRem1wTnFGcElNakhSdzhkS3BhcmRvdy1naGk?oc=5",
-          "published": "Tue, 20 Oct 2026 11:39:05 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 characters",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "First GTA 6 TV Commercial Strips Out Steamy Shower Scenes, but Shows More of Lucia's Fancy Hair Tech - IGN",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWkhmeG5Sa3BXSmRRRmFJek1YYm9lZ3RvTk5leW1Pb2M5Y3d4TGQ0RkpsM2g1V3BEeWJwckdZQ2hsdXNlLVdZWGtETjhPcVp3NmJ3eGtmVXZOVjJmRWxHMXJTa2c1TDNucktWTWUtcDlIb3Z0Wm9RZEJLT1FQQlpkWTl6UXhBM2JyeEFDdl9uUXRqQQ?oc=5",
-          "published": "Thu, 22 Oct 2026 13:40:52 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
-          "topic": "GTA 6 characters",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "‘GTA 6’ Leaks Return With A Clothing-Optional Lucia And Jason - Forbes",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcF91cU9HekdjcUhSbGxLRFllWllSZkdQdjdjZ1hRYjBGcUxSUnRubWhpQWNBV05CVlVMWlg4dUpFakp3ZFZid1U1ZWNCdFlZR21QUDM5YnAxajhtQWd4NFdVMEtCNTl2QjNHeGxDcmNSSDZMZXdRSUQxOWRVOHZwbmpRMWtma1V5NV9hUUZNZ3lLaWFIMTR5bUpBbkNvYUdON09UVlQzZVE2WGRsclJn?oc=5",
-          "published": "Thu, 08 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
-          "topic": "GTA 6 characters",
-          "evidence_status": "rumour_or_theory"
         }
       ],
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
@@ -97,7 +102,7 @@
       "name": "GTA 6 gameplay",
       "status": "active",
       "trend_score": 100,
-      "evidence_status": "rumour / theory",
+      "evidence_status": "mixed evidence — review sources",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
       "mentions_today": 14,
@@ -122,16 +127,6 @@
           "source_type": "news",
           "source_name": "Google News RSS",
           "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 gameplay",
-          "evidence_status": "rumour_or_theory"
-        },
-        {
-          "title": "GTA 6 gameplay: Key details that you might have missed - Red Bull",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15LVBoWEtoQXZCSmtPV1dPZXhMT2lpeGNyaXNCTnJkLUJhMUZPNUs3X3NhOHRBdEtpRU1sQlN2RWpyWW9tQllmV1ZQczR6Ry1zLTdGaG5wM0pqaWt2X1V2QW5R?oc=5",
-          "published": "Tue, 20 Oct 2026 15:30:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
           "topic": "GTA 6 gameplay",
           "evidence_status": "rumour_or_theory"
         },
@@ -164,6 +159,16 @@
           "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
           "topic": "GTA 6 gameplay",
           "evidence_status": "rumour_or_theory"
+        },
+        {
+          "title": "GTA 6 Gameplay Leaks Are Back with Potentially Big Spoilers - Push Square",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcUk5Ul9nVWNVR193XzhyNDJqV2FGNzRkZ09YeUxFZm9BNXhzZ0xYanhVeWxmblllcXZRUEtuMGRxTGNtNkJsRDF4RFNhQ1hJUTFmMVJwNTgwLWZDYjhqa0lNenJlaTdFemhTSHpjdk1DNFhBNXF4SDJhMFY3UmNWeGlSYlJjY21UWGp6SnpwVVdMX3hVbUxMai1HeF8tQVJK?oc=5",
+          "published": "Thu, 08 Oct 2026 07:00:00 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
+          "topic": "GTA 6 gameplay",
+          "evidence_status": "rumour_or_theory"
         }
       ],
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
@@ -173,10 +178,10 @@
       "name": "GTA 6 release date",
       "status": "active",
       "trend_score": 100,
-      "evidence_status": "rumour / theory",
+      "evidence_status": "mixed evidence — review sources",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 16,
+      "mentions_today": 11,
       "distinct_domains_today": 2,
       "signal_types_today": [
         "news",
@@ -192,16 +197,6 @@
       "inactive_days": 0,
       "samples": [
         {
-          "title": "Shrek 2 Remastered Gets a November Release Date with a GTA 6-Style Trailer - 80 Level",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVGNmQzV3ckdhMWRaMldCSkNwUmpxNTBRZTZRZWNqM255Mk1iTHJlU3dVOXc1dEMzZEtRcURfMUZhT2RkMlozREVYOTRDNW9sU2pKR2s5R2VkQzM4TU5meEw5WHVIRGlaOGJKRzRIMXAyX2dMVUx3RUF3Z2JDTllnTU1sdHlBdUZHMUE2ZU04VE1Xc0VPTm9xOGFqcWY4dw?oc=5",
-          "published": "Wed, 21 Oct 2026 06:24:17 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
-          "topic": "GTA 6 release date",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
           "title": "'GTA 6' Cyberleek release update: New leaks, development build, and roadmap of what might be next - Mashable",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOU9KUXk5VWxSS2lQMGhrakdEdGcwVGU3eE95TEVqMDBLOVpERGVJQTV0aFhFQVUzQXZCZ0dIY2ZmbVFnTWpzSkMzZEJvaVphUy1WRkhwTmlIWnZUalU4Q09qaGxLNXhwLWo3YmZlSUQyU0xoQXRURWgwd21rX1BEdjVtV054aGxvMEE?oc=5",
           "published": "Tue, 13 Oct 2026 18:49:19 GMT",
@@ -210,16 +205,6 @@
           "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
           "topic": "GTA 6 release date",
           "evidence_status": "rumour_or_theory"
-        },
-        {
-          "title": "GTA 6 release time, preload date, download size and editions - GAMINGbible",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNY3F6WkJoVHM1UzhVd2xmSG1QaVIycnJRNHNxeTlYOVJnY2ZJLUtfZEFGeG1MWUc2SkxZbDA3bFQtaUVuV0JTX2VxZzZJV08zR1dKblB3OTNkVWRrbjRLOG1Yb3ZWQ2l3WURVTUZ1dFpKc2NQYTdUM0cwdDR5dHFZODI3UldCRUljNzZHbEJyLWRWWGVqV3FrYWdyUlFYWVk?oc=5",
-          "published": "Tue, 13 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 release date",
-          "evidence_status": "reported_or_unverified"
         },
         {
           "title": "PC Gamers, Rejoice: GTA 6 PC Port Could See Release in Early 2027, Report Says - CNET",
@@ -232,14 +217,34 @@
           "evidence_status": "reported_or_unverified"
         },
         {
-          "title": "New GTA 6 Screenshot And Launch Trailer Artwork Released - RockstarINTEL",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVlBlVWRBTVNxUk9hQ1IwLW12Zzl2dlRXeDdWVWJaMXdESnctMlRhMEM4bGVnUEdDUFdiYXJXWFAwcHMxTTZhWTVyY3RYSUI1QU80YkxnaGhOa2FuRkJNb0FWaERHYzBVV2txWVhuQ29YR0x0ZnNoSTZ1cFh5MHJPbjFlQlo1MUNEdnVr?oc=5",
-          "published": "Thu, 15 Oct 2026 13:56:45 GMT",
+          "title": "Rockstar teases GTA 6 release with real-life Miami marketing stunts - Radio Times",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdlRXdldyWWdsTUJjWnJLUnRZcnRmU3JLQ3paMFlvd3ZEbm1BLWk2aDNVNUlhWUN3WkI4RVVlai11bjdzNTJ1R1pGUm9RN1FkVklzM3hhX1JMdmNzM3d4M2tTaTU5R2E5azhqcXRkWWdSV2VKWEMtOVA5Z2JKb2lWMWNXV0prWGFtOHpNN1hmdw?oc=5",
+          "published": "Thu, 22 Oct 2026 15:17:03 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 release date",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "GTA 6: Release date, how much it is and everything you need to know - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYbkYzQnhnZzRGZTZEQjFIX0t0MEc3eTFCaUtGdjQ5MGFNd1lpU09MamlMSUVwa25WeVdmSXcwSzl3a0N2YjdZU3dYblR0ZDlhR2RIZ05IQTRoQQ?oc=5",
+          "published": "Thu, 15 Oct 2026 07:00:00 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
           "query": "\"GTA 6\" trailer OR gameplay OR map",
           "topic": "GTA 6 release date",
           "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "GTA 6 leaker CyberLeek is now reportedly threatening to release a full, playable build of the game - Eurogamer.net",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNG5yek1QTGV2VHFRSlNISjlFeGJtLVJYeGFLbVlOQ2xjalZlTTFmQ3lRNDViSkNPZGVNNUZQb3NrdVFMM0haaHBWYnBvTlpvM0N4VWs2eWk4OGZhWUpFUVdHSGNCX3AzT0RITHM1ZXp1WmYwTjNFOERFUUQ5SWhBZ0E2OGs?oc=5",
+          "published": "Sat, 10 Oct 2026 07:00:00 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
+          "topic": "GTA 6 release date",
+          "evidence_status": "rumour_or_theory"
         }
       ],
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
@@ -252,7 +257,7 @@
       "evidence_status": "rumour / theory",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 17,
+      "mentions_today": 11,
       "distinct_domains_today": 2,
       "signal_types_today": [
         "news",
@@ -308,12 +313,12 @@
           "evidence_status": "rumour_or_theory"
         },
         {
-          "title": "GTA 6 Voice Actors – All Confirmed And Rumored Cast - GameSpot",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOT010M21BSHJMeElIblA0ekpZbWNaTzQ4amp4b1NiTVExa3FnT2wxemp2MGhSSzBkUGJJQUVaMVNxZk9ud3hkMGpUaVZDc1k4V0pxNEJuVVBxMkpfbm0wLXRmYUVpZVJaRmlXb0Iyb1l3NlZDQ3lYcmJXZUpPRXdRUS1BY1NGaTNxYy14eg?oc=5",
-          "published": "Tue, 20 Oct 2026 11:05:29 GMT",
+          "title": "GTA 6 Nude Leak Clips Remain Unconfirmed as Hype Fuels Scams and a Crypto Grift - GTA BOOM",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNXp0ckQ0U1NRREZ4T3AxX0NBQkZ1Wkpab01JLTJ1NUpPUURUR3VMU3l5WmZEMnZROFhIMW1QeGZ1TTZyRmlrdE9ZVWZBWkNacEFkeTgwNFJaVmt5N09DTDNLeVpobjZ5MjZwWjk0NnlCNl8zNVZYdWVJcFpjaHhuVDJRT2h3NGJDRDI0?oc=5",
+          "published": "Tue, 20 Oct 2026 07:27:55 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
+          "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
           "topic": "GTA 6 rumours and leaks",
           "evidence_status": "rumour_or_theory"
         }
@@ -325,10 +330,10 @@
       "name": "GTA 6 trailer",
       "status": "active",
       "trend_score": 100,
-      "evidence_status": "rumour / theory",
+      "evidence_status": "mixed evidence — review sources",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 31,
+      "mentions_today": 27,
       "distinct_domains_today": 2,
       "signal_types_today": [
         "news",
@@ -354,9 +359,9 @@
           "evidence_status": "reported_or_unverified"
         },
         {
-          "title": "Aspyr announces Shrek 2 Remastered with GTA 6 parody trailer - Nintendo Wire",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVV90bUtlWGRhYmVCV2l3YTd3WmpOa1pVLVNkblVDV0VqWXZWSTBEVGxaSC1udURTc1ZaZHlBZ0xYTWUxeFRKYkVkZEVjQmtaekctZXJ2WjV0Y0RncVJ5RnhBZzVCb1FWMDhCSTdGOUIzU094WndBR2VRT3Q4R1VWem93REJGb0VFSDd4SWhUOExYNHAtaklRTVQyc09OQUVWVUJkQg?oc=5",
-          "published": "Wed, 21 Oct 2026 16:55:21 GMT",
+          "title": "GTA 6 fans think Rockstar is filming a live-action trailer on Miami's closed streets - TweakTown",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRy1BVUdsNEVsNndrYXVoOVR2dVotOUotVnhiQnpMVEw1QklyblNZbnJrYjc1U0MxM3V0XzdfdzZBQkxjTjBqLTRKdC1HbENaRmZjaWVOS0xkRWF6dnpEbmZZVW1IdGJ4eDZoZFdGMVNINUxvUDU3ZGpQN0tISEZKWkFWQ1pjc2U0SHpnSEVPb3Bic1VuZWtrR2VOdUVJUDBSTTJfdm14MGhtaHYyYTZUWmtMQndIU0N3QTV2cUdvZ3NBVzB3NXJJeVJlZVA?oc=5",
+          "published": "Wed, 21 Oct 2026 16:16:16 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
           "query": "\"GTA 6\" trailer OR gameplay OR map",
@@ -374,9 +379,9 @@
           "evidence_status": "reported_or_unverified"
         },
         {
-          "title": "GTA 6 Trailer Features 'Dacity' Meme Coin—Here's What Traders Think It'll Do - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMUwzR2VTODFqOGk4TC1QYjBRd2c2UHliaW9qekNHSlRoOGppb1lPRlV5bWtvd2diOWswR3ZTZEczQVM3cWt1R1J4cWRrcVB1bTNvVmFudjgwSkJVMFFjSjhoVDBoMlA5a01MQ2ZGLTBaSlhSUklFMktQZTBtWGVHZGdRYy01SFN0YlIyd25JSk5pVVNVUGU4Tkhn?oc=5",
-          "published": "Wed, 21 Oct 2026 13:16:04 GMT",
+          "title": "Extended GTA 6 Launch Trailer Has Begun Airing On TV - RockstarINTEL",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRExWMzJpTnhUQTlSNXJXMlFfc09NSW1CWWlpZW96NVNjc1FFc2tXSmxRTzJYMHVscTZiek1lc19CQmF3OWczQWxhSEJoU3NYZExmLW9UUV9YUzRwUjNwYzNpdUZRcTFDY0lESEZoUVNNbGxFeFY0VzVBVGlBWFlXQ0ZuTDhQQQ?oc=5",
+          "published": "Wed, 21 Oct 2026 09:19:05 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
           "query": "\"GTA 6\" trailer OR gameplay OR map",
@@ -384,9 +389,9 @@
           "evidence_status": "reported_or_unverified"
         },
         {
-          "title": "GTA 6 Trailer Features 'Dacity' Meme Coin—Here's What Traders Think It'll Do - Decrypt",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZGFSYmVjdmdqT2VIVExaa1djLW1sc19JdnVucUlNblZZYlRsbm5ST3B1ZlZaaU5GR25TMXlWZnY1NUkzanM4Q2dvTUVnaHVuRlktRm1Qc1VDX1YxQmhJV3plRDFwd3ktc25HOGt5YWpPcGZ3RzIzYlZQbWhXeU9IQ3p0cWVGQW95Q1Z5alJHMWNUTTZmRXEwYjZTZ1ZRLVk?oc=5",
-          "published": "Wed, 21 Oct 2026 13:16:04 GMT",
+          "title": "GTA 6’s New TV Trailer Is A Bit Different, See It For Yourself - GameSpot",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUEkwdGd1d0doMi11V3l3YkMxTlF4UEp1OHZxR05DcUpPVUFKekE2ejEyWk5CTVVZdUY0X3lfYUVZU19pTlA3bElKQzlJd0tFazYtUnJpZzY4VFFramhFaW5xRFlrcENKSUhpNVEyYmNIUC13V2U3MXQ4azNkNTlPNE1LVllGVTYyZG40VVRtZThTTS1aUGVROXEtdw?oc=5",
+          "published": "Wed, 21 Oct 2026 07:00:00 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
           "query": "\"GTA 6\" trailer OR gameplay OR map",
@@ -400,11 +405,11 @@
       "id": "a579a605c05c",
       "name": "GTA 6 map",
       "status": "active",
-      "trend_score": 98.7,
+      "trend_score": 99.6,
       "evidence_status": "reported / unverified",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 10,
+      "mentions_today": 7,
       "distinct_domains_today": 2,
       "signal_types_today": [
         "news",
@@ -419,16 +424,6 @@
       "active_days": 4,
       "inactive_days": 0,
       "samples": [
-        {
-          "title": "GTA 6 map regions revealed as Rockstar promises a zoo and 170 animal species - Metro.co.uk",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNS2JFUXB5a1otX2ZENHd1Yy1XV0Q4Z2NUWmgwTF9xWnBtMlFndHF1ZURLMmpKdHB1OFhONldPNXRBNEIyVzVnQ1MydkJ1OVBObkRTWHFfNlpFNjl4RjkwakRJeGZQQWpwX2xDSXF3cVJjcjNrb1M1VWdidVlDOGhScGlJYUVPRmJsSi05eW52eXo0S0owLV9Dek91a0ZqODJqRGxJTHE2MEtlS0llc1RZ0gG0AUFVX3lxTE5oYm9CNm5JenFZOFdTWVdDc0w0Z29wSXJaR2FoS2hLcmVSSXBhQkhwVklrMmlyOVg2UWNfZTQ5enNISlRsdTNVQ3dBOUxYNmJXekEyRHVLbDQ0UzZmeEhkT2tUOHR2d000eVV2MXRUZHVJZkQ0aFBvUGtiLW9wSWxpX0MzY1c3TjNZY29WRXVncDF1NDhES3IyMGZETVl6QzJKWWhqOE5UeWotNHVXSjVCLWFXSw?oc=5",
-          "published": "Wed, 30 Sep 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
-          "topic": "GTA 6 map",
-          "evidence_status": "reported_or_unverified"
-        },
         {
           "title": "GTA 6 Map Update Reveals New Buildings, Enterable Locations, and Size Comparisons - MMOEXP",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUHlkTGRSaFZHV2RUQXppZjdMWFBkZXBfdHV3dEloZEsxbDN2S3ZHZ2tZbTZnTlJtQXg3b1dBUGowa0hVUlhINjFkUmE5VmFvd00tbl9jaUpMMTZ1b0E5M0M3X2h1MlJfLU5TWUZiaVJQY01BbTE4UWRrRU9KWDRnamhrakJNY21XX2tJbkJzQ3l5X1pSZU1XQUs3RDhzUDNTNm13TXVNRnltaFNfR2ljQzh3?oc=5",
@@ -477,19 +472,32 @@
           "query": "GTA 6 map",
           "topic": "GTA 6 map",
           "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "GTA 6 Map vs Real Florida: 4 Hours in 10 Minutes?",
+          "url": "https://www.youtube.com/watch?v=vk8gPtxetGs",
+          "video_id": "vk8gPtxetGs",
+          "thumbnail_url": "https://i.ytimg.com/vi/vk8gPtxetGs/hqdefault.jpg",
+          "channel_name": "JeDi",
+          "published": "2026-10-24T09:49:56Z",
+          "source_type": "video",
+          "source_name": "YouTube Data API",
+          "query": "GTA 6 map",
+          "topic": "GTA 6 map",
+          "evidence_status": "reported_or_unverified"
         }
       ],
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
     },
     {
-      "id": "dfbbe3923734",
-      "name": "GTA 6 Online",
+      "id": "8d8e4de71414",
+      "name": "GTA 6 general discussion",
       "status": "active",
-      "trend_score": 77.5,
-      "evidence_status": "rumour / theory",
+      "trend_score": 75.0,
+      "evidence_status": "mixed evidence — review sources",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 5,
+      "mentions_today": 63,
       "distinct_domains_today": 2,
       "signal_types_today": [
         "news",
@@ -498,6 +506,80 @@
       "source_names_today": [
         "Google News RSS",
         "YouTube Data API"
+      ],
+      "first_seen": "2026-10-24",
+      "last_seen": "2026-10-24",
+      "active_days": 1,
+      "inactive_days": 0,
+      "samples": [
+        {
+          "title": "Sony Patches PS5 Again As GTA 6 Piracy Fears Put Jailbreaks In Focus - HotHardware",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMFJkSWx5Rm41VnhMdGEwcG9VOUNNelFYbzVRdkNZMUZTeDh4ZXBPeHVGTXpBSXpYYlBEdDRaTUpKTTdzQUZiYlRYTzFNelk2YmdMSjZQX1ZuUGJVemxaVndWdW1pTFJMc0ZKU1RHLUNTZXZlUkpxZ0ptTDVXbl9sMEZrT2NIMW9PWmlYY3ZmblA0Z2ZmTkxuQ1VpVHVrUQ?oc=5",
+          "published": "Wed, 21 Oct 2026 18:50:00 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 general discussion",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "GTA 6 launch could drain $1 billion from US economy — this is how - NewsNation",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTjUwdDBJODZRSmQ3LUdqYnRBWEZvSFIzY3ZJQnFxVkFuZ25XNmk2eHdUZDE0SHZxeno5RHU4bFlDT0o1WWljNUpKUWctWGdmaEpBMkxqSkRQVVBaQ2pteFRXVEVpZWtPMUdLMmZidGVYZXNNdXhCdGtzRi1PN1ZvbzJiZGdfZ29kZ05EX2ZxeUTSAZYBQVVfeXFMUFl6WnR0cXlHaUlBcTlnY084dkRRbEtYYUZjc0JBdWV5enZQSmNwNC1PNUFhd1RzTzZfakpiaEJScVdnSm1QMmZGczNTVWw0Q3pqQVZNaDYwd2JDUHc5aXRXSUNvcXlWbVNzZVlnTzlwc21YTVBLUEN1UnlnZVZmZjcyTjZhdXdIUnZjaFRaVUxDal9JaEZ3?oc=5",
+          "published": "Wed, 21 Oct 2026 15:55:43 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 general discussion",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "Gaming Can’t Afford More Games the Size of ‘Grand Theft Auto VI’ - WIRED",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5uRFZuc0ctNFN5dGpVc1U1U3drV3dBU19DZ3ZCMlNNMlFTTDhQWDdScUg2VVl0OEpBNjh4TVN6S3oyeVhEU1B3QzhSTEIwRUJacjlzMk8xbDhpRnM5ZjMzeA?oc=5",
+          "published": "Wed, 21 Oct 2026 11:00:00 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 general discussion",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "Games like Call of Duty and EA Sports FC most at risk of losing players during GTA 6 launch, according to new data - GamesIndustry.biz",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNU05sMnVhRGNLX2gtd3UtV3pkZ3BFQ3ZXZlEtSkl4RGNtVXY1Z2U4eUdDYUI3MHBHVVVoc19udTVidTZUUXVqTG4xUFY3RXNWY2hQQkJDZm5zeTJONTFva05wNTM2ckljSVJRdy1TbVZFYk9CSFVVRnV6UEtrazVOU2s0UGlyVV9EM0JZckhROWVqOHZYWlItanBfcUxvMm5KWGszNGkwSm81U2VuMDhtUG50WmNYMGhaVkdPZmhaQWtkdDBLRnZxRlNnN1VUZFZ0b3J1aUJmUkxFSkU?oc=5",
+          "published": "Wed, 21 Oct 2026 10:53:35 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 general discussion",
+          "evidence_status": "reported_or_unverified"
+        },
+        {
+          "title": "GTA 6: everything we know - Everything Edinburgh",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9kM0RNYWg3a0tldjRiWVg2MkZlZTV4UXlRSFFJbTJlbDdQa1pfRWY0VkdPR2pSZVdGcnFaSzc5ZFNTZ0pWTHhDY3B0Q0dLajBfZWtGcUpYU2lVSTNrRFltOFU2RzJBaFAyOVNIWDE1SVFhU2JRS040QUJB?oc=5",
+          "published": "Wed, 14 Oct 2026 20:15:32 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" characters OR locations OR missions",
+          "topic": "GTA 6 general discussion",
+          "evidence_status": "reported_or_unverified"
+        }
+      ],
+      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
+    },
+    {
+      "id": "dfbbe3923734",
+      "name": "GTA 6 Online",
+      "status": "active",
+      "trend_score": 43.5,
+      "evidence_status": "mixed evidence — review sources",
+      "evidence_score": null,
+      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
+      "mentions_today": 2,
+      "distinct_domains_today": 1,
+      "signal_types_today": [
+        "news"
+      ],
+      "source_names_today": [
+        "Google News RSS"
       ],
       "first_seen": "2026-10-21",
       "last_seen": "2026-10-24",
@@ -520,46 +602,7 @@
           "published": "Tue, 20 Oct 2026 15:45:35 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Online",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "My Pacifist% Is Real Tho! - GTA 6 News #gta5 #gta6 #gtaonline",
-          "url": "https://www.youtube.com/watch?v=hptea0NvCnQ",
-          "video_id": "hptea0NvCnQ",
-          "thumbnail_url": "https://i.ytimg.com/vi/hptea0NvCnQ/hqdefault.jpg",
-          "channel_name": "DarkViperAU",
-          "published": "2026-10-24T07:00:36Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Online",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "Not This Again... - GTA 6 News #gta6 #gtavi #gtaonline",
-          "url": "https://www.youtube.com/watch?v=JPlYV2IEasY",
-          "video_id": "JPlYV2IEasY",
-          "thumbnail_url": "https://i.ytimg.com/vi/JPlYV2IEasY/hqdefault.jpg",
-          "channel_name": "DarkViperAU",
-          "published": "2026-10-24T05:00:25Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Online",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "Gaming Is A Luxury Now - GTA 6 News #gta6 #gtavi #gtaonline",
-          "url": "https://www.youtube.com/watch?v=fStkPzwzbRE",
-          "video_id": "fStkPzwzbRE",
-          "thumbnail_url": "https://i.ytimg.com/vi/fStkPzwzbRE/hqdefault.jpg",
-          "channel_name": "DarkViperAU",
-          "published": "2026-10-24T04:00:22Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
+          "query": "\"GTA 6\" characters OR locations OR missions",
           "topic": "GTA 6 Online",
           "evidence_status": "reported_or_unverified"
         }
@@ -570,8 +613,8 @@
       "id": "4bb38739b1e1",
       "name": "GTA 6 soundtrack",
       "status": "active",
-      "trend_score": 41.1,
-      "evidence_status": "rumour / theory",
+      "trend_score": 41.0,
+      "evidence_status": "mixed evidence — review sources",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
       "mentions_today": 3,
@@ -621,65 +664,11 @@
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
     },
     {
-      "id": "c9fe1d4b2741",
-      "name": "GTA 6 Extended Look",
-      "status": "active",
-      "trend_score": 40.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 3,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "‘GTA 6’ Extended Look Tops Netflix Charts With 31.1 Million Views in Four Days - Variety",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYzRzZVE2eWlGUVZyZ0pkX05GZHkzWVdrT05BOTV5M19McndaaGE3b2dlMkNOVF82NXRSYXktNGVJUDd4eFQxSndaQ3A5cWE4OVZYeXZmb25nZ0Nabmx3VEtwWDZtQk0xZ3FMdkNtekNVSEVGS290VElFN1ZhVVVYUWlxMjA?oc=5",
-          "published": "Tue, 01 Sep 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Extended Look",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "GTA 6 extended look: What we know after Netflix preview - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrTEVJMG1KMERfZ051N0JpWDZTajVuZGRDaVZTZlRpUl9qdDlSMkxvT3M2Wlo0R3k2X1RuOVJFYzFPU1JCanAtZEQ4RmQ3bld5R0pUb2VHclEwZTM2?oc=5",
-          "published": "Thu, 27 Aug 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Extended Look",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "GTA 6 extended look: 145 mind-blowing details you missed - Indy100",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTndTRTR5YjVla1M4QmtENDY0eTNOSkRuWWQteUpTb0VwYzBzNUZYazRCbGJmMEMwbnlBNHViM1FBN0VVSTdVWTJmZlpkSWlRbVdSWXhxbVgzZUdMQ1dXNV93a0V0eTNlZzFXVG1ieVQ5TTZGNTBocHNIWDFSUHNuU1RGVQ?oc=5",
-          "published": "Sat, 10 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Extended Look",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
       "id": "20f2ea066cd5",
       "name": "GTA 6 Vice City",
       "status": "active",
-      "trend_score": 34.4,
-      "evidence_status": "rumour / theory",
+      "trend_score": 39.7,
+      "evidence_status": "mixed evidence — review sources",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
       "mentions_today": 2,
@@ -768,604 +757,6 @@
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
     },
     {
-      "id": "0c1c85a6eefa",
-      "name": "GTA 6 Taking Things",
-      "status": "active",
-      "trend_score": 29.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 2,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 vs GTA 5: How Rockstar is taking things to another level - Red Bull",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Ld0kwU0FIZG1fTG5KcFU3R2VrbVFtQWtYQ1Vpdy14ekp0bFBzS0pKZVNSc01zVUNMRXZ0SDFxM0E3Q0s3ZWR3UXRwSnp1WlltME1WNmhvSU1PYml0MTBHRHFmWllWUl94?oc=5",
-          "published": "Tue, 20 Oct 2026 16:00:43 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
-          "topic": "GTA 6 Taking Things",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "GTA 6 vs GTA 5: How Rockstar is taking things to another level - Red Bull",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBoOGVLWmJrSmVDaGp4WmRaLWZheEpHZDFHcVBYdVJMbTZWM3U4N2pmSlZrcnZGSFFYalRYeTRZbEFhWEVSNnRibW9jTjRLV2JnTTZRZlItVEJLcXAwR19NTFVGZzQyUVBQ?oc=5",
-          "published": "Tue, 20 Oct 2026 14:55:44 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Taking Things",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0a3fdc144b5d",
-      "name": "GTA 6 Already Sold",
-      "status": "active",
-      "trend_score": 25.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 2,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Has Already Sold 6.45 Million Units - eTeknix",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBEVnhPeG1fYjVHUktwSUFxNW5vbVppUUc5Vk96UjY5S2dKX2xtRm5oLXdQeFJyT3J5UUJadTZLYXJUM2drd3AzbTF4VGlWYUF2QXJUMmZwWDBYT3RtejcwOUFkdVExSGtJVjJpOVBHT1NVNWo1?oc=5",
-          "published": "Thu, 22 Oct 2026 04:09:25 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Already Sold",
-          "evidence_status": "reported_or_unverified"
-        },
-        {
-          "title": "GTA 6 Is Already Sold Out on Amazon - VICE",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBrX05sb3BnRlFTNExlNnBrR3hqU1U1dVJ2X3JkaWdBWjhFX2R4SElRWkpFalUtRjdOOWRpWkVrX3g2c2VqWEhuekNPMzJHQ01FZG5WaWYxUUF0OVRid3ZfQUdBc04?oc=5",
-          "published": "Mon, 12 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Already Sold",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0bc67687e6f9",
-      "name": "GTA 6 Ads Sneak",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 TV Ads Sneak In Unseen Footage And Cut Scenes Ahead Of Launch - HotHardware",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13dmhzTlhLT1ZqMjV1RkNtd081cko3SDJkLXgtTTFIRFFwZElzSGFVOTI5QnJ3V3Y2RDRzTFd3dFgzM25tWURsZFhralhmWHFVQi00ZzBCdzFNOXliY0l3S1lrVEpqRWRpeGpLdWJ3dUk4bEJCSUE?oc=5",
-          "published": "Fri, 23 Oct 2026 18:05:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Ads Sneak",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "581ca4982d75",
-      "name": "GTA 6 Almost Still",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Is Almost Here – And I Still Can’t Believe It - GamingBolt",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBZWU1mNW1LOElBTW5iTnRucWJWTGpsS19WZVh3ZmFydG80X3phbnpGQXY2LVFnM21XYXctOE9hNlBzSm9qN3JpUnpyNkxuNXJDZ3Z3UmhjR3dXZzIycHR5dENkTmN1VFhtSGxUblc2S3g5c05PWTg4cWNJWQ?oc=5",
-          "published": "Fri, 23 Oct 2026 14:03:15 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Almost Still",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0d3994e1dcce",
-      "name": "GTA 6 Already Made",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 has already made Rockstar more than half a billion dollars - TweakTown",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNU2ZxN05yeWlENmJDdDF1SzJhLWhsd2laYnN5SnpBVFdkWTFnOTJEd0lqb1pXV1FEbWQxNXRZNGhIM29reUFFWHo1VWZwbVJVdElBdGlXN0RaeFNheHJ5OVd5STB3dVFWd0RJY3dSOURSYnRfbWRrZkNMMVJvR1JWcVRrNGR6ZWdDSUdoWjY5YXRUalFoWFNQUlJZQi1rdzlCT1FrRWtNa1lJeW5DSE8xMzlqTQ?oc=5",
-          "published": "Tue, 20 Oct 2026 17:05:12 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Already Made",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "d9c5d8f64be5",
-      "name": "GTA 6 Can Afford",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Gaming Can’t Afford More Games the Size of ‘Grand Theft Auto VI’ - WIRED",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5uRFZuc0ctNFN5dGpVc1U1U3drV3dBU19DZ3ZCMlNNMlFTTDhQWDdScUg2VVl0OEpBNjh4TVN6S3oyeVhEU1B3QzhSTEIwRUJacjlzMk8xbDhpRnM5ZjMzeA?oc=5",
-          "published": "Wed, 21 Oct 2026 11:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Can Afford",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8c8bfb399774",
-      "name": "GTA 6 Can Now",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "You Can Now Buy GTA 6 Burgers And Fried Chicken IRL, But It’s Not Cheap - GameSpot",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNX2duRG5nQWtyNm5Gejk1WEc0WHktaURKZzBua0xBRk1jTFpmUy1HWkRqTGY4TC1haW1iSTQyaFJVdWJLWVIzcHEtQkJaUU14MC16ZW56SVZueDJkNzA5dXdHUTgxdldUaHRyTjlRUjZLUmhyR2VzUmc4OHFCNDVpX3hLRGdkbUNQcklCYjVJWEV6MVpPQkV0RFY3RlpsTFc3UXJMUURtQQ?oc=5",
-          "published": "Thu, 22 Oct 2026 13:27:53 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Can Now",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "6d20306a50b1",
-      "name": "GTA 6 Car Appear",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "'My car could appear in Grand Theft Auto VI' - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5uazZ1Zm9ySndJMFVYTXdCNXBhZkc3T3lrWTRpZGJkbXJ0TGxkMWppZWYzclhpaldKVkU0V3ZrTGpPOWF2MjVocDhwdzFvaTMxRXotY0JSZHhzQ0Ix?oc=5",
-          "published": "Fri, 28 Aug 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Car Appear",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "ca0b5662cd21",
-      "name": "GTA 6 Cost Billion",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Could Cost the US $1 Billion in Lost Productivity: One Economist Disagrees - www.techtimes.co.uk",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWHFCNXVQQjlIb3ZaTm9kaW5NdjhXcm0xRVBJTWJ6Q3lfLWpad1hnaE12RklNTm45SWRmNnlQSjVKdGR1OTNVTUYySU9heXpnNExjUHRpNl80bklaLXAtQ1U5dkRLMV83TklnOGttY3JxYmZERWpvdkFBVHdGVGJFS2J6V1RUQV9IQTlzNw?oc=5",
-          "published": "Fri, 23 Oct 2026 13:28:44 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Cost Billion",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "1a2d2f21e182",
-      "name": "GTA 6 Crash Economy",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Could Grand Theft Auto VI Crash the US Economy? - The National Interest",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdURvTFJWb1pQMy1sWmFmU3lSX0l3MndDY3QxZF9VbEJWb3QxRTZRTlBMeURNcXN0U1I5akJSVzZQYURqRVhhcXVkdUxyUmZ6X2ZLMFc5bVo4LVRCUmw1cV9kQWxMU3k2djZVa0NYbThkQ3puSFdBd0t6ekVUMEt3c2VoM2duMkw0cGVVeFg4eUNrT2pNcVE?oc=5",
-          "published": "Fri, 23 Oct 2026 11:04:25 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Crash Economy",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "bc90fcb2dced",
-      "name": "GTA 6 Devs Say",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6: Rockstar Devs Say They Had \"Dark\" Period During Game's Development - IGN India",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZWd6VlZGa1lDU29hVGp2UWFYdlF5VHFKcWFIcU0zRGR3dkxPajFRblMxSWVrUFRxT1ZsQVF4LVh3Z1IybnQyakN1cVVUeTJlS1BhQzd6ekZhak5na2ZzRlhkVllfNE1VWWYtNHoySndDSVBJVmxQNUVpY0lKUExKb0d0OC1la0RRYUNGZU1FOWxTQjU0YmZMVldkOFQtRUdkbmFFdHJVREJxc2hJUUVERVdMaDFKZw?oc=5",
-          "published": "Fri, 23 Oct 2026 17:20:15 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Devs Say",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "f256c5860cf4",
-      "name": "GTA 6 Everything Know",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6: everything we know - Everything Edinburgh",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9kM0RNYWg3a0tldjRiWVg2MkZlZTV4UXlRSFFJbTJlbDdQa1pfRWY0VkdPR2pSZVdGcnFaSzc5ZFNTZ0pWTHhDY3B0Q0dLajBfZWtGcUpYU2lVSTNrRFltOFU2RzJBaFAyOVNIWDE1SVFhU2JRS040QUJB?oc=5",
-          "published": "Wed, 14 Oct 2026 20:15:32 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Everything Know",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "5511c649efed",
-      "name": "GTA 6 Everything Need",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6: Everything you need to know - GamesRadar+",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBOOUVvTUkzcHhESFJBUTZRcWJBclcxTTgtblUzcTdPRUc3WHBPRDdKRXltcGdMRG5hMTdSZnY0ZmdPLVEtX0pDR3ZOS2trWDF1?oc=5",
-          "published": "Thu, 15 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
-          "topic": "GTA 6 Everything Need",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "de50a018c6f1",
-      "name": "GTA 6 Fans Preordering",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Why GTA 6 Fans Are Preordering A Game They Still Haven't Seen Properly Played - SVG",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNT0VCbk5mMi1LY0pLTGIwdGc4ZS1PRlFSSkhpNVhVX080T1V6dUJ4NmxuMWRSLXl1UE5hTFNDNGQ5ZWMwV082M0Npc2NGV3plem9IVkhUdFVaWUZfTjRoMlV4MG4xaVl0ODFEUFh0YTZXaHFVWEQyMTI5SkptdlhKMzl4cllLUW5H?oc=5",
-          "published": "Fri, 23 Oct 2026 22:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Fans Preordering",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8d5d18980e0c",
-      "name": "GTA 6 Fsr Allow",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "FSR 4.1 will allow the Xbox Series S to run Grand Theft Auto VI in 1080p at 30 FPS for $499 - GameGPU",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOalVYOXRaSld6QkxuRG9ITi1QMWFiVXZ4Mlc3UlB1MXl2Z0U2SDcxLUphdFRyN19veGJadml3SDBIYy12VUJIQmtUbG1vY2k1TndHTnA4UEI3Um1IeTVDTmFrVE9mdURsbGI0RWJ5ck5mNGpBbE1FeHlQU014czkzMURZY1R2WWl3ZXoxa2NvN1d1dVBOSDUxY2pKTm9uUUl2THROaHBXbVIwNXktMnJGZy1xRWtmQ2R0bkdBRHV3?oc=5",
-          "published": "Fri, 23 Oct 2026 19:34:05 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Fsr Allow",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "5fa2598f7dcb",
-      "name": "GTA 6 Guides Hub",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Guides Hub – How To Do Everything In Grand Theft Auto 6 - GameSpot",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdFF6UnluN3ZuRllodngxaTJFTnlXZmdxSzR1Q0E0U1NzQS16eWFOeWtxdjV5Wmd6QUlIanlfVUtHdG1Eel93cjdNRlVCMVdNandnc2ktdTV6VnRNRVhsX1M2NkxRMXJPaFd1ZXVLM1A0SzBoX0wxMXh4a21iUWkyakxrTjIyazExbU1wTDVrWktoejdveHpLSnhn?oc=5",
-          "published": "Thu, 15 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Guides Hub",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "c5bfa8e0248e",
-      "name": "GTA 6 Inbox Ps5",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Games Inbox: Will there be an official GTA 6 and PS5 console bundle? - Metro.co.uk",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQT19KN0RRUDJBM1F0S0hZb0MyUEx5T1V5R09vaWVHcGpseEF4VU1vb01kQ0pDd0RZTEVyTTQ1Z3JuZHBpWlpDanlpTjVaNzJFRFNNd2lpRFkzSDZYQThwQ0FSekN2WlIxamhLNl9ZcEFmMUNBWXBZR2poNVlkYUZySmFZcXRvWkEzR2ZHbHVpYzVYTG5zZEHSAZsBQVVfeXFMTkFGbU96VEJwN2Z0REpLd2w5dHdHbDV5ZWZBeVBZVDhTSHl6NGJqOFlfeG92ZDhjSFNVQVpScmhOYS1lXzdJYnRnblBMek5CUHdyNmdhcEYxeTUtcFFkV29qa3lZYmkyclZhVjUwTlg0NUZqN1cwOUpQMzBVSDB6SUZBS0tGMUlLSk5ITDhJUzRHT21vYm5PWGlOT2s?oc=5",
-          "published": "Wed, 07 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Inbox Ps5",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
       "id": "37baee563dba",
       "name": "GTA 6 Leonida",
       "status": "active",
@@ -1392,7 +783,7 @@
           "published": "Wed, 14 Oct 2026 07:00:00 GMT",
           "source_type": "news",
           "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
+          "query": "\"GTA 6\" characters OR locations OR missions",
           "topic": "GTA 6 Leonida",
           "evidence_status": "reported_or_unverified"
         }
@@ -1400,2332 +791,37 @@
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
     },
     {
-      "id": "5abc3e86645c",
-      "name": "GTA 6 Like Call",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Games like Call of Duty and EA Sports FC most at risk of losing players during GTA 6 launch, according to new data - GamesIndustry.biz",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNU05sMnVhRGNLX2gtd3UtV3pkZ3BFQ3ZXZlEtSkl4RGNtVXY1Z2U4eUdDYUI3MHBHVVVoc19udTVidTZUUXVqTG4xUFY3RXNWY2hQQkJDZm5zeTJONTFva05wNTM2ckljSVJRdy1TbVZFYk9CSFVVRnV6UEtrazVOU2s0UGlyVV9EM0JZckhROWVqOHZYWlItanBfcUxvMm5KWGszNGkwSm81U2VuMDhtUG50WmNYMGhaVkdPZmhaQWtkdDBLRnZxRlNnN1VUZFZ0b3J1aUJmUkxFSkU?oc=5",
-          "published": "Wed, 21 Oct 2026 10:53:35 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Like Call",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "3cc79be215db",
-      "name": "GTA 6 Now Officially",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 is now officially just one month away - Metro.co.uk",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaV93SjdLUUwzeVhwM09BUkdyRjNrUHI3a0NmU1VyU2ViUnFPdG1iWS1lMllrenlESDlKbDRIRUhjdXRfSUliaVVRdkk1VVQ4bVR4S2hHTDdWUzNvb2RFWWpXVVFWQkNTNjQxZWg1S1kxU1lPek5tRHAxWnk5b1FINXd6OFlkSDJL0gGOAUFVX3lxTE1aTkJxRmlKXzZOMV85XzAxM2tOOEpJRFphd1lqN1BRTUVjeDlZeXBRV1J0dXZsQW1uWkU4NXVaRC1TR0k1YnJXNFhBYTNqU2l1Rk9CZmppc3pUdFk2aDd2c2JfZThnR0RqM3NPQkQzR3QzbjBMcXN5cENZbDJwTTRXU19IbkRmNlhxMDE4TXc?oc=5",
-          "published": "Mon, 19 Oct 2026 16:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Now Officially",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8e4d01f8d79d",
-      "name": "GTA 6 Platform Poll",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Platform Poll: 36% of DF Viewers to Play on PS5 Pro After 30,000 Votes - Digital Foundry",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUWhFRUlMOVJMM21vUXZtRUNod1lTY1dvbEY5aHQ5SW5HZ1h3eDl0YTc4R1BxbG1DaUwzTjl2ajFXcE5wNWdkRWJ1RXRaMVJ1OVNRWUhUSWR3M3R2b1ZnWHZHREVJd0tOdUxzMmNNekVFWHFsaGYzZFNlSFJpM2N0bDhFVzBIRGNiZ2NWNm9hd0hOX1RtWG9vQjVuUmlLUHVMT2FZZmxZa1hLNHZHTzE5d05Sck9RYjVZcDd1NzB1azNpZw?oc=5",
-          "published": "Tue, 20 Oct 2026 18:24:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
-          "topic": "GTA 6 Platform Poll",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "1f37b33cabd5",
-      "name": "GTA 6 Playstation Console",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "PlayStation 5 console sales jump 22% amid anticipation for Grand Theft Auto VI - GameGPU",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUTh2R2pwMVFrZU9hSWswa0xNcEc3cWJMVXNndzdpOWwwcGhRMzFiTjY1NFc0N1VUc2w4UGJmUVNTWmplNDhrY2lYdmc5a2xtZEdOTWxYekhqQnByTmxwMnFUWEtrdWlzOTRycnlpRWJSRHB2S3E5eDYySTNKb0hQbkF2bDhTRlp4bjg5Zjh6R3ZIS2NYUnFudWJYZ1ZDQTFZSDFRcjNhVG8yNktNS0FYRnNuSXpzWXBy?oc=5",
-          "published": "Fri, 23 Oct 2026 20:43:15 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Playstation Console",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "27ed9e1bdfb8",
-      "name": "GTA 6 Poll Taking",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Poll: Are You Taking Time Off for GTA 6? - Push Square",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBOUExaREFHbXRZYVE4czFUYllEQ3Fhd3BZcmZQWmxpYkJmNVE2c0VsTlJ3MWFVWFVfYjlHd0I1ZXVxaXZ1Z3NQZ2gxeXhvbW1tZkEwYlpGay1NemktdmF6aHg4RnNYSlJvNTZBSVczY1RtUlB6eHZWSTJSQTRFRk0?oc=5",
-          "published": "Fri, 23 Oct 2026 16:19:24 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Poll Taking",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "17e8416428d7",
-      "name": "GTA 6 Pre Orders",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Pre-Orders Are 146% More Than Any Other Game - RockstarINTEL",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUUhYVjRXdTFpUzBlQS1qMkNvbHRsdFkzaUV1ZlVlUTUzNWZ5NWw3V0tXSmlqa0EtM3g0Q0RWQ050bzlGdnkzbVpBdjFkTzNSd3ZuWkpLamNsd1lzaUNOdUJoUnFJZHBoMERXWmhQbHozenBNQmhCYzNiangxUkg5NUdTendqcWpWQzBF?oc=5",
-          "published": "Wed, 21 Oct 2026 10:22:20 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Pre Orders",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "e7fc9b9db4b4",
-      "name": "GTA 6 Predicted Cause",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "‘GTA 6’ predicted to cause 1.5million Americans to take sick day, costing companies $1billion - NME",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcndPMDBaM1E4VDBBYkRJTGhiMm9EY00yOEktSUthd2tmVDZ5cHZCcUZ4V1J5ZlJOYlF4VFBUdFYzWHN0cExHLXoxZlhRQ1h6cVFqT3F0cmNyUW82bFdTOVY5ZHVvSlZTc2k4VGF4N3RjYjVac2NnYnhSdEpmR0JqRi1RQ2xPUkZ1Y2RJRjBtTk00ZlppcENZSHZERElvUm8?oc=5",
-          "published": "Thu, 22 Oct 2026 13:35:19 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Predicted Cause",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "559fade78a07",
-      "name": "GTA 6 Price Standard",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Price: $79.99 Standard, $99.99 Ultimate [2026] - https://tech-insider.org/",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbGV6M1VLSWFYWER0MUlVdk1vY2duSTEzaW01RU1jbFlfMWthNGpnWG1qQ2NFV1RBSU0yeGZfTWsxR3piNFRiVmZLRFRlaDEwUmJxUHpIOTNNNUtQbFo5RTZGbmlRVDR5Q1VXTFFFUHBJT2ZvTy16dm03REx4RWFud1JVaw?oc=5",
-          "published": "Fri, 23 Oct 2026 00:31:27 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
-          "topic": "GTA 6 Price Standard",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "385cc26ce3ce",
-      "name": "GTA 6 Ps5 Lands",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "PS5 lands new hardware upgrade intended for GTA 6 as it bolsters 'plays best' claim - GAMINGbible",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMFNsU0pFMmN6cFdVNzhCYkxxa0RCdGMxaUllSUZtcnY4X3ktUGoyNmhvc21Qc1lDYmJUR0E0ZHNjR1BHUG9ROVFEM0VMX3d1dXpzYTNJbnc1ellFZVV6RlhIYjB4Z3dUQzlkaGVKS1Z6NFVYUkxLeVJOcHFrbTVubkpkVDVDUDczNjVDR0dSZnMxZGxRN3B2RjlFbHpOcGM1czQ3RjlaR0dSaXFsUDhRYURzQUprcG8wWWZiMUhWLWI4bmMy?oc=5",
-          "published": "Fri, 23 Oct 2026 12:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Ps5 Lands",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "dd86e2116fa3",
-      "name": "GTA 6 Recap Complete",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA Recap - The Complete Timeline (Watch Before GTA 6!) - IGN",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZnVoenczVW8zT3kxNmR2cE96NThXckFaanU3TTVFdUJyMWdIREE5ZWtOSjlMemxuWS1kNjhXZGZTNFo0a2dsWkNQQWZJazZQUzk3S3daUDJCWHAyLUR6SnVpYkJWaHd1Ym1pd25JejE3aG80eXc2LUhiYVhWcnd6Y3ZZc1dEOW1XYUpCRElCbEgySENIX1prVV9RZXo5UFl3NWJSdWliaWRiQnBq?oc=5",
-          "published": "Mon, 19 Oct 2026 17:30:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Recap Complete",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "bd574e2e95e7",
-      "name": "GTA 6 Reportedly Tried",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Rockstar Games reportedly tried to reunite Daft Punk for GTA 6 - Mixmag",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSHptUUpLRUU5aG1SNzRzM0hXZktEbGh6OXAzWUdqTUJMYm4wTjNMbEZ2Y2ZIWklmTlBWU2ZVR1BmNFl2dzdjaDQ1VlViZTRZanVoYm9lOG9hSlVObmM5V0RYZjhXQjVuR3F3bVFWdDBESWtvSjc0QXZiMWVfZER0aUxUUGg?oc=5",
-          "published": "Wed, 21 Oct 2026 13:41:14 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Reportedly Tried",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "a2a4087476fc",
-      "name": "GTA 6 Side Activities",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "All 25+ GTA 6 Side Activities Confirmed By Rockstar (So Far) - SVG",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1lVWNwZmVrdkt0LVYyMnRmYzNqWko1SjZYekMwcWVBRV9fdDVWcmV3cmtiaVJ3RnQ0c0R5d2ttX3FuQ09pdXNmc0FidFc2MlY3WjNRS2FZeHkxREVhaHZUVUJBRGxncU11bjh4dldUUnRnVWczV0U2MA?oc=5",
-          "published": "Wed, 21 Oct 2026 20:30:31 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Side Activities",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "aa5f96251301",
-      "name": "GTA 6 Things Missed",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "24 things you missed in the GTA 6 Extended Look - Substack",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB2TDNLWlRvWE5keURVRUZLbEFscDI1MmtDUk90U1BONTY1Q2JsOFpRZDBnY1ZCS2tNbWRWXzBsQ25LVUl3RHJ6czBHak11Z2haazhZWC1PbE9jaGRCQnNxdWQ2MXVCLVcxTjhhTmxOV2xaMmpoMVpMYklkT2M?oc=5",
-          "published": "Fri, 28 Aug 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Things Missed",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "5251b899776f",
-      "name": "GTA 6 Two Half",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "“Two and a half times bigger than GTA 6”: the secrets of Assetto Corsa’s free roam mode - Top Gear",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOTE4MnJVdUd6T3RZejFxeldpWHdJQmVGYUZqNHhsX1d3WlN1R3BkbFpDZ3lySnZ1WGgzcDFFblhRTmk1bWZlR01PcGhmWndVYUd6bWYydG1FeThEbUdyQngxbUdRVXFVR3VPM1k2OXBIWUQwZzhWVGpXVXk3T1RZUE9fd2Z0N3lTYVliSzZ0YW51VXJ3NUhFLWlEY2VMOWo5azJwekp4R0tEM0k2M1RXWA?oc=5",
-          "published": "Fri, 23 Oct 2026 04:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Two Half",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "938182c61d9e",
-      "name": "GTA 6 Wants Physical",
-      "status": "active",
-      "trend_score": 17.0,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Rockstar wants physical intimacy 'done right' in GTA 6 as it confirms nude scene - Metro.co.uk",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMzhEdVJVNWJEckQya0hOVmRHdThkZzU0QWt6bzZIc1lEY2dkbkNUcXdZaXhqZlpVb0FLd3YyQzN2WnFybFVlYjVPWl9Makdpb09MU1FyOGN6VGJFTGg1TEpkdUQ5WHJiVk9MTEZXdHpXMEtWY2YyNUFHbHBmdVk0S2NqZkZ1QUwzdm03a3ZzcTd3dkpVQ0ZtNTU1X2xvVXppa1F0bV9Ea3JCMXY2TVlB0gG0AUFVX3lxTE5NZS1BZDdzSlppaUxzZUhrSWxiRHRCbkpfTWNhRXQ3WExDOWdpbmVkRmRZd21NbExlZm50M1NhclRtYlJXc2FLaFFFN3JtM3V3d1NORGhaSkNZQVpuVkFSLV9RMTdTd1AxNTNya3FRWjc5cS1EYm56UjFhQ191UEs0cnRoY3VqWmltUGJMVkpfbV94V1p5M1pmZXlsOUZaRS1PS2dQY3FEZU9sOXhfYTN2Ujhneg?oc=5",
-          "published": "Wed, 07 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Wants Physical",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "3744bb55b3a1",
-      "name": "GTA 6 Poked Fun",
-      "status": "active",
-      "trend_score": 16.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 poked fun at by surprise remaster that's putting Fallout 76 and other AAAs to shame - GAMINGbible",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdUNYTzY1SnpZczZpMEN2RDJOcV9HOS1qcmkzTVNzZTdIYlp0SGRWWVhmaDBKdjhEX0FPV0pMNXZWTE5ZaE15N0F5SnJpbmVtS0J3MDBpd3NkakdDbVkzbTBIRzBGWFFneC1VNWlCVFdkSzFpbG9lRzAyRVdDc0V4LUZ5cGVYQnFDMC1DSEtBXy00V1d2ODYzZw?oc=5",
-          "published": "Thu, 22 Oct 2026 02:00:02 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Poked Fun",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "4ffc9c266373",
-      "name": "GTA 6 Big Interview",
-      "status": "active",
-      "trend_score": 16.8,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6: The Big Interview - IGN",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FRVJXM01GLTNDeXRjQzhpRFp4LVRXVGRpamtacjY4SW40MkxjUVIzcWU5RWxwM3RHWHZtX1l4dXNZZ0xRVl9sNzcyOUhQOGZwRFNnbktpeXlWeS14WFVtbnNR?oc=5",
-          "published": "Wed, 07 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Big Interview",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "2ba699f84841",
-      "name": "GTA 6 God Fans",
-      "status": "active",
-      "trend_score": 16.8,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "'There Is a God' — GTA 6 Fans Celebrate as Cyberleek Cryptocurrency Crashes Hard - IGN",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUXc3MDNPYTJIM1dRYmxpRmFpMmhEemszXy1EdVBHZWY1WHhER3JJTm11TGp2SmlYdzF0cDdxLUs3S1NqMDhDbFVOV2dSSlY3dWh0QmZZZVNRbmRnNWUwcVBHTGxNZ1c2eGhqcXZiT2I4anJaNnZreFVwcFBHMS1JNE9SY1R6WWZpaFZqVnpXNkotRGVh?oc=5",
-          "published": "Tue, 13 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" leak OR rumour OR rumor OR theory",
-          "topic": "GTA 6 God Fans",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "182212ea20bf",
-      "name": "GTA 6 These Things",
-      "status": "active",
-      "trend_score": 16.8,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "'All these things sort of come to bite you later' — Rockstar co-head says GTA 6 will feature narrower roads than GTA 5, which had a 'ripple effect' as the studio had to add even more buildings - TechRadar",
-          "url": "https://news.google.com/rss/articles/CBMihwNBVV95cUxPYkVDMGlKbldsdlBGU1ZyaWd0UmxXY196ZzFvalJNakRXc3V1Z21HbklUbm9WVWV5VExzZjhHZzg1bE90UmVOSjdkaVlONnBKN0lmemJETVprZ3ZEcXM0Vzk0OG1lUi1uUXpfZW5IRjB4bFJ6eHJhR2ROU29SckV4Y3cxdWJKei11WTlCSEJ5NEZhSjVXMnl3LXBMNGNabTEwWGM3Q2dfM1V1a1BSUWNIZ2lSNXAxWGtyMWpwdzJ6N3Fnc21hQXBoUi01RDlfWkdFUFBqdVdOQXBuZjdnRzUwcktDRUFLQXQwT3dDbTU4N2JDRTVUVlVKc0RUdUdmcmtjUzZSUnJzR25QQjFKWjVjcEpaTnFXQmxNUUNyRnJrM3NscndDUW4yZUJ5WTdSM1c3dmJueEpXbjlGemF3ZEF3YU1uYnZGcndJa21weGlCRkNRQnRLQTBfOFNpa256SmRjLVY3Rjh5Y1M4TVMxMnFPYlRWU1NZd0JZSndWMkNZRkgzczZINlZJ?oc=5",
-          "published": "Tue, 20 Oct 2026 11:27:41 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
-          "topic": "GTA 6 These Things",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "d46dea996734",
-      "name": "GTA 6 Wildlife Animals",
-      "status": "active",
-      "trend_score": 16.8,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 wildlife: What animals, birds and fish have been revealed so far? - Red Bull",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xaUpvU0x0N205eVlQazNFZ3VYeU9NN2lnSnl5MUdwOGdtVnY1dW1URm5RMENGOEs3dmw5QXJrc0RQOG1LMk8wdnhjM1piM0xXcmlTczFDWQ?oc=5",
-          "published": "Tue, 13 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" characters OR locations OR missions",
-          "topic": "GTA 6 Wildlife Animals",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "e3bcca383942",
-      "name": "GTA 6 Scariest Mystery",
-      "status": "active",
-      "trend_score": 16.7,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "The SCARIEST mystery in GTA 6 so far! 😱 #gtavi #gta6 #rockstargames",
-          "url": "https://www.youtube.com/watch?v=rGsoe8A45bQ",
-          "video_id": "rGsoe8A45bQ",
-          "thumbnail_url": "https://i.ytimg.com/vi/rGsoe8A45bQ/hqdefault.jpg",
-          "channel_name": "The Daily VI",
-          "published": "2026-10-23T19:53:58Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 gameplay theories",
-          "topic": "GTA 6 Scariest Mystery",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "2fc15e22c95c",
-      "name": "GTA 6 Tornozeleira Cia",
-      "status": "active",
-      "trend_score": 16.7,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "A tornozeleira da Lúcia esconde um segredo do GTA 6? 👀",
-          "url": "https://www.youtube.com/watch?v=OFsVx9Dq5zg",
-          "video_id": "OFsVx9Dq5zg",
-          "thumbnail_url": "https://i.ytimg.com/vi/OFsVx9Dq5zg/hqdefault.jpg",
-          "channel_name": "GTAVI Shorts77",
-          "published": "2026-10-23T21:57:21Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 gameplay theories",
-          "topic": "GTA 6 Tornozeleira Cia",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "10862424ba84",
-      "name": "GTA 6 Trigger Billion",
-      "status": "active",
-      "trend_score": 16.7,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Could Trigger A $1 Billion Workday Blackout Across The U.S. - HotHardware",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNX1gxckZGSDh5ZE0zZzgzWU1JaUZ2cE41MklMVnd3ZWtPbExuX0JienZCcVhMT0I4WUtkNVNhVWJNTTRrVk5wLUQ5QUhNNGQ0ZTlmeDFhSm1Dd01pLTdRU1lhZXRDTHp2emJTckJiUWJFaXJ5MHEzQXp3LXlPNFBpRjBLTzJ4RmlKVzlHbE43SlVJbDg?oc=5",
-          "published": "Thu, 22 Oct 2026 16:01:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Trigger Billion",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "a0299b9013d3",
-      "name": "GTA 6 Can Only",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Why You Can Only Carry a Few Weapons in GTA 6",
-          "url": "https://www.youtube.com/watch?v=wlbyj6Qe8AA",
-          "video_id": "wlbyj6Qe8AA",
-          "thumbnail_url": "https://i.ytimg.com/vi/wlbyj6Qe8AA/hqdefault.jpg",
-          "channel_name": "RoddyGames",
-          "published": "2026-10-24T06:45:43Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Can Only",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "c948c6817019",
-      "name": "GTA 6 Days Until",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "25 Days to go until GTA 6 🔥 #gta6 #gta6news #rockstargames #gaming",
-          "url": "https://www.youtube.com/watch?v=7uOYM4k6YTI",
-          "video_id": "7uOYM4k6YTI",
-          "thumbnail_url": "https://i.ytimg.com/vi/7uOYM4k6YTI/hqdefault.jpg",
-          "channel_name": "GTA6NewsFlash",
-          "published": "2026-10-24T06:30:21Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Days Until",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "bb745c43496f",
-      "name": "GTA 6 Extra Footage",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6’s TV ad has extra footage 👀 Did you spot the difference? 🤯 #GTA6 #GTAVI #GTA6News #Shorts",
-          "url": "https://www.youtube.com/watch?v=BMOAKIlo0Ko",
-          "video_id": "BMOAKIlo0Ko",
-          "thumbnail_url": "https://i.ytimg.com/vi/BMOAKIlo0Ko/hqdefault.jpg",
-          "channel_name": "LS2VC",
-          "published": "2026-10-24T05:29:25Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Extra Footage",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8d8e4de71414",
-      "name": "GTA 6 general discussion",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6",
-          "url": "https://www.youtube.com/watch?v=mQXuzHelBUI",
-          "video_id": "mQXuzHelBUI",
-          "thumbnail_url": "https://i.ytimg.com/vi/mQXuzHelBUI/hqdefault.jpg",
-          "channel_name": "Jumanji Gaming",
-          "published": "2026-10-24T00:30:04Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 gameplay theories",
-          "topic": "GTA 6 general discussion",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "2f1118653896",
-      "name": "GTA 6 Impossible Police",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "The Impossible Police System In GTA 6 🚔😨 #gta6 #gtavi #gta6news",
-          "url": "https://www.youtube.com/watch?v=aCXg6dryrPg",
-          "video_id": "aCXg6dryrPg",
-          "thumbnail_url": "https://i.ytimg.com/vi/aCXg6dryrPg/hqdefault.jpg",
-          "channel_name": "BadalxPlayz",
-          "published": "2026-10-24T06:30:17Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Impossible Police",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "6ae037e62044",
-      "name": "GTA 6 Ishowspeed Thinks",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "IShowSpeed thinks GTA 6&#39;s Brian is from GTA 5 😭 &quot;Is that Franklin?... Michael?&quot;",
-          "url": "https://www.youtube.com/watch?v=WdfIfpzxyRQ",
-          "video_id": "WdfIfpzxyRQ",
-          "thumbnail_url": "https://i.ytimg.com/vi/WdfIfpzxyRQ/hqdefault.jpg",
-          "channel_name": "GTA 6 in 30",
-          "published": "2026-10-24T01:01:37Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 trailer",
-          "topic": "GTA 6 Ishowspeed Thinks",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "1e4947033cd0",
-      "name": "GTA 6 Mount Kalaga",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6: Mount Kalaga&#39;s Strangest Locals #shorts",
-          "url": "https://www.youtube.com/watch?v=y2UQjVCIMzQ",
-          "video_id": "y2UQjVCIMzQ",
-          "thumbnail_url": "https://i.ytimg.com/vi/y2UQjVCIMzQ/hqdefault.jpg",
-          "channel_name": "Wanted Level",
-          "published": "2026-10-24T07:15:54Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 map",
-          "topic": "GTA 6 Mount Kalaga",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "dfb431574b42",
-      "name": "GTA 6 Nearly Prepare",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 is nearly here: here’s how to prepare for launch day - Red Bull",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5fMXpWX3MtNVhPQUVROHBEZlU1VmktXzlyVFJtdXpzUTlNbUtvN3ZyNi1fWC1xbG45dF9mdS1oYVJJcGx5T1Nmc0ItcDNVdnZLUVU2SnUxTGlHUEJXdGZHcGxCc2VrZw?oc=5",
-          "published": "Tue, 13 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" trailer OR gameplay OR map",
-          "topic": "GTA 6 Nearly Prepare",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "48239feb69ee",
-      "name": "GTA 6 Tried Kill",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "Rockstar Tried to Kill GTA 6&#39;s Weapon Wheel (GTA VI)",
-          "url": "https://www.youtube.com/watch?v=cnBgjKl9Ny4",
-          "video_id": "cnBgjKl9Ny4",
-          "thumbnail_url": "https://i.ytimg.com/vi/cnBgjKl9Ny4/hqdefault.jpg",
-          "channel_name": "GTA 6 Rewind",
-          "published": "2026-10-24T04:04:38Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Tried Kill",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0a9200768aed",
-      "name": "GTA 6 Vai Virar",
-      "status": "active",
-      "trend_score": 16.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "🚨 GTA 6 VAI VIRAR CYBERPUNK 2077?! 🤯 A TEORIA QUE DIVIDE OS GAMERS! #shorts",
-          "url": "https://www.youtube.com/watch?v=1HUICshme6A",
-          "video_id": "1HUICshme6A",
-          "thumbnail_url": "https://i.ytimg.com/vi/1HUICshme6A/hqdefault.jpg",
-          "channel_name": "GTAVOXBR",
-          "published": "2026-10-23T23:10:34Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 gameplay theories",
-          "topic": "GTA 6 Vai Virar",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "2b93401ce8a3",
-      "name": "GTA 6 Prepare Console",
-      "status": "active",
-      "trend_score": 16.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "How to prepare your console for GTA 6: storage, preload and wallet funds - ADV - IGN Nordic",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNDd2eWk1ZmV3NTgyczBmN0Q2OXROckYzdkw4STZCVkltb1ByR3piYjdrR0F3UXJvVk5JUy10ZlJtT054Q1pCVnREUjFnWDhPRTZJYlVkWWFfcGZsekdkd0huY0pBNE1CenowcWR1RzBhZ3RKY1FqM3hvcjFxaGVMM19xQXY2bks1NGUwaVNEZDkxOEJuQ2xZRFRFMDZaSDVkeWplZU01T0lXRGJTMENaTFFyNlBsb3BNY1JQQlNmcFpEdw?oc=5",
-          "published": "Mon, 19 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Prepare Console",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "dbecd0b651b3",
-      "name": "GTA 6 Tried Get",
-      "status": "active",
-      "trend_score": 16.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "\"Rockstar has tried to get away with Grand Theft Employment Rights\" - Final hearing in Rockstar vs. GTA 6 fired employees begins this week - Eurogamer.net",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9JeG5odERyekd0WW0xYU5WcHo5SjNSVnNKdVJGXzVyenBuTkhsSUFBQ0lXX0x6TGwyeVRGQS1OTXlaZ1hDV3VrUVlkUUdCanppcGlEWmloRXBtRzJ1UHFEZE9jVlVLR0ZIYnFqN1NPNk5Rd0VU?oc=5",
-          "published": "Tue, 08 Sep 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Tried Get",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "245631c856bb",
-      "name": "GTA 6 Yet Gold",
-      "status": "active",
-      "trend_score": 16.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA VI not yet gold: Rockstar explains the final push before launch - Notebookcheck",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcXdMWjgxZllNbGFiM3l4bVhtNi1aRDRnb2ZDN1dJVTluRmNBVDNrejJtMENBdzdpNFE1NTltNTh0bC1udHFsN2ozRTN3ZWNCT2hvaEFkanFRNDl0QU95cW5TZjZrUFpteFRZMTBRMlhCbFUtQW5MUnRTWEN5U1draXQyaDNVV1FjaVlZeVdzSDdQWU93bzBxQjJtMDlNXzNHVEF4TDNxcWxaV0U2X05tbg?oc=5",
-          "published": "Sat, 17 Oct 2026 01:55:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Yet Gold",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "ff2724a77fc3",
-      "name": "GTA 6 Chalega Real",
-      "status": "active",
-      "trend_score": 15.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Me Chalega Real Spotify?! 😱 Company &amp; Army Ko Mili Chhutti!",
-          "url": "https://www.youtube.com/watch?v=K-WO8ZNJp30",
-          "video_id": "K-WO8ZNJp30",
-          "thumbnail_url": "https://i.ytimg.com/vi/K-WO8ZNJp30/hqdefault.jpg",
-          "channel_name": "Bhuvicade",
-          "published": "2026-10-24T09:25:16Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Chalega Real",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "371d23c4ed8f",
-      "name": "GTA 6 Looks Real",
-      "status": "active",
-      "trend_score": 15.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Looks SO REAL It’s Actually INSANE! 🤯🔥 #GTA6 #Shorts",
-          "url": "https://www.youtube.com/watch?v=KzXG8jRnwwM",
-          "video_id": "KzXG8jRnwwM",
-          "thumbnail_url": "https://i.ytimg.com/vi/KzXG8jRnwwM/hqdefault.jpg",
-          "channel_name": "AsterBoy Gaming",
-          "published": "2026-10-24T05:52:46Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 trailer",
-          "topic": "GTA 6 Looks Real",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "582fd55d7848",
-      "name": "GTA 6 Officially Eligible",
-      "status": "active",
-      "trend_score": 15.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "video"
-      ],
-      "source_names_today": [
-        "YouTube Data API"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "GTA 6 Officially Eligible For Game Of The Year 2026! 🏆#shorts #gta #gta5",
-          "url": "https://www.youtube.com/watch?v=MAv3H2owKUE",
-          "video_id": "MAv3H2owKUE",
-          "thumbnail_url": "https://i.ytimg.com/vi/MAv3H2owKUE/hqdefault.jpg",
-          "channel_name": "Acker ex Gaming ",
-          "published": "2026-10-24T07:00:34Z",
-          "source_type": "video",
-          "source_name": "YouTube Data API",
-          "query": "GTA 6 news",
-          "topic": "GTA 6 Officially Eligible",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "9607a0d5afe4",
-      "name": "GTA 6 Replaying Red",
-      "status": "active",
-      "trend_score": 15.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "I'm replaying Red Dead Redemption 2 to prepare for GTA 6 — 5 features that need to return - Tom's Guide",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNS1p4SWJEaTVVWkFnb1ktZlMxT0UyS2N3MHNoM2g5Z0xNclJKYzBqT05SaXRXVnFxeko3NXNPOVpRaHV1d2wzMzFmUGtkcVdnOWZzcm5sUlFDVW9ZNzNJdzZraHQ5b2piNmZoX0xBSUhWLVU5OExTLVREc2VSNkZrc0NUUEU5SGtGckdNbW1jcC1Lck1HT290ODNpVzNyN0tjeUdPNXlZU3NOd2psUTZfcnZ6djVGdTB2UVRj?oc=5",
-          "published": "Sat, 24 Oct 2026 09:45:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Replaying Red",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "9ba1f3c7d306",
-      "name": "GTA 6 Making Bloomberg",
-      "status": "active",
-      "trend_score": 12.6,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 1,
-      "distinct_domains_today": 1,
-      "signal_types_today": [
-        "news"
-      ],
-      "source_names_today": [
-        "Google News RSS"
-      ],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [
-        {
-          "title": "The Making of Grand Theft Auto VI - Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBhVW5EZ0xkY1RMNGZvWHJORXAwMFA2dVE4d3hfWE01SlpSWjZLSG53d21RSHlGMXdNWl8zN1pqdEdDSWtZQ2VhMkg0MUR4b2pmRnY2TDNqenVoTTNYNHFSWmNLZV9iZzRfbl9OR2RlMjE3a0dFZXFFUg?oc=5",
-          "published": "Wed, 14 Oct 2026 07:00:00 GMT",
-          "source_type": "news",
-          "source_name": "Google News RSS",
-          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
-          "topic": "GTA 6 Making Bloomberg",
-          "evidence_status": "reported_or_unverified"
-        }
-      ],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8e504e184034",
-      "name": "GTA 6 Ahead Playstation",
-      "status": "active",
-      "trend_score": 12.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "b6b37fbc9e9f",
-      "name": "GTA 6 Fuels Jump",
-      "status": "active",
-      "trend_score": 12.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "b4a97425e5b2",
-      "name": "GTA 6 Cliff Richard",
-      "status": "active",
-      "trend_score": 8.8,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "505cb7eced6a",
-      "name": "GTA 6 Forget Leg",
-      "status": "active",
-      "trend_score": 8.8,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "2b5947c52f1b",
-      "name": "GTA 6 Face Something",
-      "status": "active",
-      "trend_score": 8.4,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
       "id": "f5225fff03aa",
       "name": "GTA 6 PC release",
       "status": "active",
-      "trend_score": 8.1,
+      "trend_score": 14.3,
       "evidence_status": "reported / unverified",
       "evidence_score": null,
       "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
+      "mentions_today": 1,
+      "distinct_domains_today": 1,
+      "signal_types_today": [
+        "news"
+      ],
+      "source_names_today": [
+        "Google News RSS"
+      ],
       "first_seen": "2026-10-21",
       "last_seen": "2026-10-24",
       "active_days": 4,
       "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "013eb924c53d",
-      "name": "GTA 6 Got Crypto",
-      "status": "active",
-      "trend_score": 7.1,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "926b2d4b611a",
-      "name": "GTA 6 Launch Drain",
-      "status": "active",
-      "trend_score": 7.1,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0d88fb773851",
-      "name": "GTA 6 Sony Patches",
-      "status": "active",
-      "trend_score": 6.8,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 3,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "ee4761d47b8d",
-      "name": "GTA 6 Playstation Firmware",
-      "status": "active",
-      "trend_score": 6.6,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "b6f48437421b",
-      "name": "GTA 6 November Rival",
-      "status": "active",
-      "trend_score": 6.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-24",
-      "active_days": 4,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "28dbe6c5f401",
-      "name": "GTA 6 Finna Get",
-      "status": "active",
-      "trend_score": 6.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "d55dc47e0005",
-      "name": "GTA 6 Best Console",
-      "status": "active",
-      "trend_score": 5.1,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "5dd1ed5e51a7",
-      "name": "GTA 6 Development Sorry",
-      "status": "active",
-      "trend_score": 5.1,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-24",
-      "active_days": 2,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "6a845f559a00",
-      "name": "GTA 6 Fans Convinced",
-      "status": "active",
-      "trend_score": 4.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-23",
-      "active_days": 3,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0fed0b3f5062",
-      "name": "GTA 6 Full North",
-      "status": "active",
-      "trend_score": 4.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-23",
-      "active_days": 3,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "a51496fc21c6",
-      "name": "GTA 6 Gta6 Shorts",
-      "status": "active",
-      "trend_score": 4.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "6e325eb2e283",
-      "name": "GTA 6 Miami Marketing",
-      "status": "active",
-      "trend_score": 4.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-24",
-      "last_seen": "2026-10-24",
-      "active_days": 1,
-      "inactive_days": 0,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8c792f8b6ecf",
-      "name": "GTA 6 Reportedly Realistic",
-      "status": "active",
-      "trend_score": 4.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "ad4658af458c",
-      "name": "GTA 6 Sold Out",
-      "status": "active",
-      "trend_score": 4.5,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "f721a1391543",
-      "name": "GTA 6 Preorders Off",
-      "status": "active",
-      "trend_score": 4.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-23",
-      "active_days": 2,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "330652413dd0",
-      "name": "GTA 6 Cops Remember",
-      "status": "active",
-      "trend_score": 4.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "bfbf9250339c",
-      "name": "GTA 6 Xbox Series",
-      "status": "active",
-      "trend_score": 4.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "9c58655c7bd9",
-      "name": "GTA 6 Issues Statement",
-      "status": "active",
-      "trend_score": 3.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "bc876e6b8db7",
-      "name": "GTA 6 Coming Less",
-      "status": "active",
-      "trend_score": 2.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "d866881a3d3e",
-      "name": "GTA 6 Fox Angry",
-      "status": "active",
-      "trend_score": 2.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "009a2d678ff2",
-      "name": "GTA 6 Might Cost",
-      "status": "active",
-      "trend_score": 2.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "3585529bc1ae",
-      "name": "GTA 6 Play Hours",
-      "status": "active",
-      "trend_score": 2.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "23e3cbfa9c45",
-      "name": "GTA 6 Por Manejar",
-      "status": "active",
-      "trend_score": 2.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "073b5242e47b",
-      "name": "GTA 6 Rydeme Taxi",
-      "status": "active",
-      "trend_score": 2.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "40d4fdc48bf6",
-      "name": "GTA 6 Taking Away",
-      "status": "active",
-      "trend_score": 2.3,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "9ae3d44e0098",
-      "name": "GTA 6 Looks Like",
-      "status": "active",
-      "trend_score": 1.7,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
-      "active_days": 1,
-      "inactive_days": 1,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "f308e296abcf",
-      "name": "GTA 6 Cyberpunk Modders",
-      "status": "active",
-      "trend_score": 1.6,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
-      "active_days": 2,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8c2972e3f52b",
-      "name": "GTA 6 Feature Lots",
-      "status": "active",
-      "trend_score": 1.6,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
-      "active_days": 2,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "44d6d1452666",
-      "name": "GTA 6 Million People",
-      "status": "active",
-      "trend_score": 1.6,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
-      "active_days": 2,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "880b645fbb67",
-      "name": "GTA 6 Sensor Tower",
-      "status": "active",
-      "trend_score": 1.6,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-22",
-      "active_days": 2,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "5a1fa4443a23",
-      "name": "GTA 6 Call Duty",
-      "status": "active",
-      "trend_score": 1.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
-      "active_days": 1,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "e0ab12ea809c",
-      "name": "GTA 6 Features Significantly",
-      "status": "active",
-      "trend_score": 1.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
-      "active_days": 1,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0c9c1fc4c666",
-      "name": "GTA 6 Playstation Version",
-      "status": "active",
-      "trend_score": 1.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
-      "active_days": 1,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "8d246893708e",
-      "name": "GTA 6 Sony Revamped",
-      "status": "active",
-      "trend_score": 1.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
-      "active_days": 1,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "ec1e5c4e358c",
-      "name": "GTA 6 Xbox Cloud",
-      "status": "active",
-      "trend_score": 1.2,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
-      "active_days": 1,
-      "inactive_days": 2,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "daa522f6ec04",
-      "name": "GTA 6 Cross Platform",
-      "status": "cooling",
-      "trend_score": 0.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "active_days": 1,
-      "inactive_days": 3,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "b87ce0d403c5",
-      "name": "GTA 6 Launch Day",
-      "status": "cooling",
-      "trend_score": 0.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "active_days": 1,
-      "inactive_days": 3,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "65f36ac59c87",
-      "name": "GTA 6 Might Give",
-      "status": "cooling",
-      "trend_score": 0.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "active_days": 1,
-      "inactive_days": 3,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "06144cfd3b0d",
-      "name": "GTA 6 Ps5 Gets",
-      "status": "cooling",
-      "trend_score": 0.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "active_days": 1,
-      "inactive_days": 3,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "0740650f8361",
-      "name": "GTA 6 Reunited Daft",
-      "status": "cooling",
-      "trend_score": 0.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "active_days": 1,
-      "inactive_days": 3,
-      "samples": [],
-      "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
-    },
-    {
-      "id": "4bc8029bdb24",
-      "name": "GTA 6 Switch Studio",
-      "status": "cooling",
-      "trend_score": 0.9,
-      "evidence_status": "reported / unverified",
-      "evidence_score": null,
-      "evidence_score_note": "Not automatically scored; source classification is not fact verification.",
-      "mentions_today": 0,
-      "distinct_domains_today": 0,
-      "signal_types_today": [],
-      "source_names_today": [],
-      "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
-      "active_days": 1,
-      "inactive_days": 3,
-      "samples": [],
+      "samples": [
+        {
+          "title": "GTA 6 Hits Consoles First — Should You Buy Now Or Wait For PC? - Forbes",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdUpXMVBQNi1hMDEzZUNueFFPM2RWRzJmT1VnZm92WU12OS14dnY0MlVHQW9WbE8yMVBYd29idlVZWnVsSDJfR1RFcGYzY2FNa0Z2c1gwd1p2YmcyN0hQN2tBMGNpc2RUY2toeUItNkkwbHo0UWs4aXVGLU0zLVBvLVdDSW9rYjVnWERWYVI4a0dIeEJyUU52YXNRMTEtdHZkb0hCd21HUEdkR2ZYaS1XcGVycURBQQ?oc=5",
+          "published": "Thu, 22 Oct 2026 02:15:41 GMT",
+          "source_type": "news",
+          "source_name": "Google News RSS",
+          "query": "\"GTA 6\" OR \"Grand Theft Auto VI\"",
+          "topic": "GTA 6 PC release",
+          "evidence_status": "reported_or_unverified"
+        }
+      ],
       "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume."
     }
   ],
@@ -3803,6 +899,24 @@
       "rank": 4
     },
     {
+      "video_id": "7uOYM4k6YTI",
+      "title": "25 Days to go until GTA 6 🔥 #gta6 #gta6news #rockstargames #gaming",
+      "url": "https://www.youtube.com/watch?v=7uOYM4k6YTI",
+      "thumbnail_url": "https://i.ytimg.com/vi/7uOYM4k6YTI/hqdefault.jpg",
+      "channel_name": "GTA6NewsFlash",
+      "published": "2026-10-24T06:30:21Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 characters",
+      "topic_trend_score": 100,
+      "video_rank_score": 99.9,
+      "content_type": "reported",
+      "content_label": "Reported news — verify",
+      "classification_note": "A report is not confirmation; check the linked sources.",
+      "classification_is_heuristic": true,
+      "rank": 5
+    },
+    {
       "video_id": "Tsf6yIN1lP8",
       "title": "GTA 6 Ne Release Se Pehle Hi ₹6,000 Crore Kama Liye?! 😱💰 #gta6 #shorts",
       "url": "https://www.youtube.com/watch?v=Tsf6yIN1lP8",
@@ -3818,7 +932,7 @@
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 5
+      "rank": 6
     },
     {
       "video_id": "1ZVxPvE5wxU",
@@ -3836,7 +950,7 @@
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 6
+      "rank": 7
     },
     {
       "video_id": "jy7WTiZJ2Bs",
@@ -3854,7 +968,7 @@
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 7
+      "rank": 8
     },
     {
       "video_id": "kbTi_VnQiT4",
@@ -3872,7 +986,7 @@
       "content_label": "Gameplay / guide / analysis",
       "classification_note": "Title-based classification; check whether this is actual gameplay or pre-release analysis.",
       "classification_is_heuristic": true,
-      "rank": 8
+      "rank": 9
     },
     {
       "video_id": "pbSbmY486EU",
@@ -3890,7 +1004,115 @@
       "content_label": "Speculation / theory",
       "classification_note": "Title-based classification; not independently verified.",
       "classification_is_heuristic": true,
-      "rank": 9
+      "rank": 10
+    },
+    {
+      "video_id": "cnBgjKl9Ny4",
+      "title": "Rockstar Tried to Kill GTA 6&#39;s Weapon Wheel (GTA VI)",
+      "url": "https://www.youtube.com/watch?v=cnBgjKl9Ny4",
+      "thumbnail_url": "https://i.ytimg.com/vi/cnBgjKl9Ny4/hqdefault.jpg",
+      "channel_name": "GTA 6 Rewind",
+      "published": "2026-10-24T04:04:38Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 characters",
+      "topic_trend_score": 100,
+      "video_rank_score": 99.8,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 11
+    },
+    {
+      "video_id": "vk8gPtxetGs",
+      "title": "GTA 6 Map vs Real Florida: 4 Hours in 10 Minutes?",
+      "url": "https://www.youtube.com/watch?v=vk8gPtxetGs",
+      "thumbnail_url": "https://i.ytimg.com/vi/vk8gPtxetGs/hqdefault.jpg",
+      "channel_name": "JeDi",
+      "published": "2026-10-24T09:49:56Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 map",
+      "topic_trend_score": 99.6,
+      "video_rank_score": 99.7,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 12
+    },
+    {
+      "video_id": "z6zGhzIssXY",
+      "title": "GTA 6: Wie riesig wird die Map wirklich? 🤯",
+      "url": "https://www.youtube.com/watch?v=z6zGhzIssXY",
+      "thumbnail_url": "https://i.ytimg.com/vi/z6zGhzIssXY/hqdefault.jpg",
+      "channel_name": "nickwsn",
+      "published": "2026-10-24T09:52:20Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 map",
+      "topic_trend_score": 99.6,
+      "video_rank_score": 99.7,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 13
+    },
+    {
+      "video_id": "LtUDAT0_bto",
+      "title": "GTA 6 Map Is HUGE! 🤯 Details You Missed #GTA6",
+      "url": "https://www.youtube.com/watch?v=LtUDAT0_bto",
+      "thumbnail_url": "https://i.ytimg.com/vi/LtUDAT0_bto/hqdefault.jpg",
+      "channel_name": "Vantage Plays",
+      "published": "2026-10-24T09:55:36Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 map",
+      "topic_trend_score": 99.6,
+      "video_rank_score": 99.7,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 14
+    },
+    {
+      "video_id": "HkgLDP4xzNY",
+      "title": "GTA 6 Map 3D View #gta6 #shorts",
+      "url": "https://www.youtube.com/watch?v=HkgLDP4xzNY",
+      "thumbnail_url": "https://i.ytimg.com/vi/HkgLDP4xzNY/hqdefault.jpg",
+      "channel_name": "DfamMINATO YT",
+      "published": "2026-10-24T09:55:47Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 map",
+      "topic_trend_score": 99.6,
+      "video_rank_score": 99.7,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 15
+    },
+    {
+      "video_id": "rGsoe8A45bQ",
+      "title": "The SCARIEST mystery in GTA 6 so far! 😱 #gtavi #gta6 #rockstargames",
+      "url": "https://www.youtube.com/watch?v=rGsoe8A45bQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/rGsoe8A45bQ/hqdefault.jpg",
+      "channel_name": "The Daily VI",
+      "published": "2026-10-23T19:53:58Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 characters",
+      "topic_trend_score": 100,
+      "video_rank_score": 99.6,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 16
     },
     {
       "video_id": "0hxGKEQJKLY",
@@ -3908,7 +1130,7 @@
       "content_label": "Speculation / theory",
       "classification_note": "Title-based classification; not independently verified.",
       "classification_is_heuristic": true,
-      "rank": 10
+      "rank": 17
     },
     {
       "video_id": "LAbeTNtjB0g",
@@ -3926,43 +1148,7 @@
       "content_label": "Speculation / theory",
       "classification_note": "Title-based classification; not independently verified.",
       "classification_is_heuristic": true,
-      "rank": 11
-    },
-    {
-      "video_id": "LtUDAT0_bto",
-      "title": "GTA 6 Map Is HUGE! 🤯 Details You Missed #GTA6",
-      "url": "https://www.youtube.com/watch?v=LtUDAT0_bto",
-      "thumbnail_url": "https://i.ytimg.com/vi/LtUDAT0_bto/hqdefault.jpg",
-      "channel_name": "Vantage Plays",
-      "published": "2026-10-24T09:55:36Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 99.0,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 12
-    },
-    {
-      "video_id": "HkgLDP4xzNY",
-      "title": "GTA 6 Map 3D View #gta6 #shorts",
-      "url": "https://www.youtube.com/watch?v=HkgLDP4xzNY",
-      "thumbnail_url": "https://i.ytimg.com/vi/HkgLDP4xzNY/hqdefault.jpg",
-      "channel_name": "DfamMINATO YT",
-      "published": "2026-10-24T09:55:47Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 99.0,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 13
+      "rank": 18
     },
     {
       "video_id": "0vA1sC0D_Os",
@@ -3974,67 +1160,13 @@
       "source_name": "YouTube Data API",
       "source_type": "video",
       "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 98.9,
+      "topic_trend_score": 99.6,
+      "video_rank_score": 99.6,
       "content_type": "gameplay",
       "content_label": "Gameplay / guide / analysis",
       "classification_note": "Title-based classification; check whether this is actual gameplay or pre-release analysis.",
       "classification_is_heuristic": true,
-      "rank": 14
-    },
-    {
-      "video_id": "vk8gPtxetGs",
-      "title": "GTA 6 Map vs Real Florida: 4 Hours in 10 Minutes?",
-      "url": "https://www.youtube.com/watch?v=vk8gPtxetGs",
-      "thumbnail_url": "https://i.ytimg.com/vi/vk8gPtxetGs/hqdefault.jpg",
-      "channel_name": "JeDi",
-      "published": "2026-10-24T09:49:56Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 98.9,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 15
-    },
-    {
-      "video_id": "z6zGhzIssXY",
-      "title": "GTA 6: Wie riesig wird die Map wirklich? 🤯",
-      "url": "https://www.youtube.com/watch?v=z6zGhzIssXY",
-      "thumbnail_url": "https://i.ytimg.com/vi/z6zGhzIssXY/hqdefault.jpg",
-      "channel_name": "nickwsn",
-      "published": "2026-10-24T09:52:20Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 98.9,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 16
-    },
-    {
-      "video_id": "tAKTUqUMw84",
-      "title": "Cidade secreta escondida no mapa de GTA 6 #gta6",
-      "url": "https://www.youtube.com/watch?v=tAKTUqUMw84",
-      "thumbnail_url": "https://i.ytimg.com/vi/tAKTUqUMw84/hqdefault.jpg",
-      "channel_name": "vinizi",
-      "published": "2026-10-24T02:41:45Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 98.8,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 17
+      "rank": 19
     },
     {
       "video_id": "rmfgBPs5CBE",
@@ -4046,31 +1178,31 @@
       "source_name": "YouTube Data API",
       "source_type": "video",
       "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 98.8,
+      "topic_trend_score": 99.6,
+      "video_rank_score": 99.5,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 18
+      "rank": 20
     },
     {
-      "video_id": "IBAbdhK9tHw",
-      "title": "O MAPA REVELADO DE GTA VI",
-      "url": "https://www.youtube.com/watch?v=IBAbdhK9tHw",
-      "thumbnail_url": "https://i.ytimg.com/vi/IBAbdhK9tHw/hqdefault.jpg",
-      "channel_name": "Inteligência Ltda",
-      "published": "2026-10-24T05:23:32Z",
+      "video_id": "K-WO8ZNJp30",
+      "title": "GTA 6 Me Chalega Real Spotify?! 😱 Company &amp; Army Ko Mili Chhutti!",
+      "url": "https://www.youtube.com/watch?v=K-WO8ZNJp30",
+      "thumbnail_url": "https://i.ytimg.com/vi/K-WO8ZNJp30/hqdefault.jpg",
+      "channel_name": "Bhuvicade",
+      "published": "2026-10-24T09:25:16Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 map",
-      "topic_trend_score": 98.7,
-      "video_rank_score": 98.8,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 80.0,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 19
+      "rank": 21
     },
     {
       "video_id": "JPlYV2IEasY",
@@ -4081,45 +1213,9 @@
       "published": "2026-10-24T05:00:25Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Online",
-      "topic_trend_score": 77.5,
-      "video_rank_score": 81.9,
-      "content_type": "reported",
-      "content_label": "Reported news — verify",
-      "classification_note": "A report is not confirmation; check the linked sources.",
-      "classification_is_heuristic": true,
-      "rank": 20
-    },
-    {
-      "video_id": "hptea0NvCnQ",
-      "title": "My Pacifist% Is Real Tho! - GTA 6 News #gta5 #gta6 #gtaonline",
-      "url": "https://www.youtube.com/watch?v=hptea0NvCnQ",
-      "thumbnail_url": "https://i.ytimg.com/vi/hptea0NvCnQ/hqdefault.jpg",
-      "channel_name": "DarkViperAU",
-      "published": "2026-10-24T07:00:36Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 Online",
-      "topic_trend_score": 77.5,
-      "video_rank_score": 81.9,
-      "content_type": "reported",
-      "content_label": "Reported news — verify",
-      "classification_note": "A report is not confirmation; check the linked sources.",
-      "classification_is_heuristic": true,
-      "rank": 21
-    },
-    {
-      "video_id": "fStkPzwzbRE",
-      "title": "Gaming Is A Luxury Now - GTA 6 News #gta6 #gtavi #gtaonline",
-      "url": "https://www.youtube.com/watch?v=fStkPzwzbRE",
-      "thumbnail_url": "https://i.ytimg.com/vi/fStkPzwzbRE/hqdefault.jpg",
-      "channel_name": "DarkViperAU",
-      "published": "2026-10-24T04:00:22Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 Online",
-      "topic_trend_score": 77.5,
-      "video_rank_score": 81.8,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
       "content_type": "reported",
       "content_label": "Reported news — verify",
       "classification_note": "A report is not confirmation; check the linked sources.",
@@ -4127,20 +1223,20 @@
       "rank": 22
     },
     {
-      "video_id": "M4jWKClSrcM",
-      "title": "GTA 6 Vice City: Official vs Fan Theory",
-      "url": "https://www.youtube.com/watch?v=M4jWKClSrcM",
-      "thumbnail_url": "https://i.ytimg.com/vi/M4jWKClSrcM/hqdefault.jpg",
-      "channel_name": "Vice Files",
-      "published": "2026-10-23T22:15:59Z",
+      "video_id": "IBAbdhK9tHw",
+      "title": "O MAPA REVELADO DE GTA VI",
+      "url": "https://www.youtube.com/watch?v=IBAbdhK9tHw",
+      "thumbnail_url": "https://i.ytimg.com/vi/IBAbdhK9tHw/hqdefault.jpg",
+      "channel_name": "Inteligência Ltda",
+      "published": "2026-10-24T05:23:32Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Vice City",
-      "topic_trend_score": 34.4,
-      "video_rank_score": 47.2,
-      "content_type": "speculation",
-      "content_label": "Speculation / theory",
-      "classification_note": "Title-based classification; not independently verified.",
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
       "rank": 23
     },
@@ -4153,14 +1249,32 @@
       "published": "2026-10-24T05:29:25Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Extra Footage",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 33.1,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
       "content_type": "reported",
       "content_label": "Reported news — verify",
       "classification_note": "A report is not confirmation; check the linked sources.",
       "classification_is_heuristic": true,
       "rank": 24
+    },
+    {
+      "video_id": "KzXG8jRnwwM",
+      "title": "GTA 6 Looks SO REAL It’s Actually INSANE! 🤯🔥 #GTA6 #Shorts",
+      "url": "https://www.youtube.com/watch?v=KzXG8jRnwwM",
+      "thumbnail_url": "https://i.ytimg.com/vi/KzXG8jRnwwM/hqdefault.jpg",
+      "channel_name": "AsterBoy Gaming",
+      "published": "2026-10-24T05:52:46Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 25
     },
     {
       "video_id": "aCXg6dryrPg",
@@ -4171,27 +1285,9 @@
       "published": "2026-10-24T06:30:17Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Impossible Police",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 33.1,
-      "content_type": "reported",
-      "content_label": "Reported news — verify",
-      "classification_note": "A report is not confirmation; check the linked sources.",
-      "classification_is_heuristic": true,
-      "rank": 25
-    },
-    {
-      "video_id": "7uOYM4k6YTI",
-      "title": "25 Days to go until GTA 6 🔥 #gta6 #gta6news #rockstargames #gaming",
-      "url": "https://www.youtube.com/watch?v=7uOYM4k6YTI",
-      "thumbnail_url": "https://i.ytimg.com/vi/7uOYM4k6YTI/hqdefault.jpg",
-      "channel_name": "GTA6NewsFlash",
-      "published": "2026-10-24T06:30:21Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 Days Until",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 33.1,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
       "content_type": "reported",
       "content_label": "Reported news — verify",
       "classification_note": "A report is not confirmation; check the linked sources.",
@@ -4207,14 +1303,50 @@
       "published": "2026-10-24T06:45:43Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Can Only",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 33.1,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
       "rank": 27
+    },
+    {
+      "video_id": "MAv3H2owKUE",
+      "title": "GTA 6 Officially Eligible For Game Of The Year 2026! 🏆#shorts #gta #gta5",
+      "url": "https://www.youtube.com/watch?v=MAv3H2owKUE",
+      "thumbnail_url": "https://i.ytimg.com/vi/MAv3H2owKUE/hqdefault.jpg",
+      "channel_name": "Acker ex Gaming ",
+      "published": "2026-10-24T07:00:34Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
+      "content_type": "unverified",
+      "content_label": "Unverified video",
+      "classification_note": "Not enough information in the title to classify confidently.",
+      "classification_is_heuristic": true,
+      "rank": 28
+    },
+    {
+      "video_id": "hptea0NvCnQ",
+      "title": "My Pacifist% Is Real Tho! - GTA 6 News #gta5 #gta6 #gtaonline",
+      "url": "https://www.youtube.com/watch?v=hptea0NvCnQ",
+      "thumbnail_url": "https://i.ytimg.com/vi/hptea0NvCnQ/hqdefault.jpg",
+      "channel_name": "DarkViperAU",
+      "published": "2026-10-24T07:00:36Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
+      "content_type": "reported",
+      "content_label": "Reported news — verify",
+      "classification_note": "A report is not confirmation; check the linked sources.",
+      "classification_is_heuristic": true,
+      "rank": 29
     },
     {
       "video_id": "y2UQjVCIMzQ",
@@ -4225,32 +1357,50 @@
       "published": "2026-10-24T07:15:54Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Mount Kalaga",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 33.1,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.9,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 28
+      "rank": 30
     },
     {
-      "video_id": "rGsoe8A45bQ",
-      "title": "The SCARIEST mystery in GTA 6 so far! 😱 #gtavi #gta6 #rockstargames",
-      "url": "https://www.youtube.com/watch?v=rGsoe8A45bQ",
-      "thumbnail_url": "https://i.ytimg.com/vi/rGsoe8A45bQ/hqdefault.jpg",
-      "channel_name": "The Daily VI",
-      "published": "2026-10-23T19:53:58Z",
+      "video_id": "tAKTUqUMw84",
+      "title": "Cidade secreta escondida no mapa de GTA 6 #gta6",
+      "url": "https://www.youtube.com/watch?v=tAKTUqUMw84",
+      "thumbnail_url": "https://i.ytimg.com/vi/tAKTUqUMw84/hqdefault.jpg",
+      "channel_name": "vinizi",
+      "published": "2026-10-24T02:41:45Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Scariest Mystery",
-      "topic_trend_score": 16.7,
-      "video_rank_score": 33.0,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.8,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 29
+      "rank": 31
+    },
+    {
+      "video_id": "fStkPzwzbRE",
+      "title": "Gaming Is A Luxury Now - GTA 6 News #gta6 #gtavi #gtaonline",
+      "url": "https://www.youtube.com/watch?v=fStkPzwzbRE",
+      "thumbnail_url": "https://i.ytimg.com/vi/fStkPzwzbRE/hqdefault.jpg",
+      "channel_name": "DarkViperAU",
+      "published": "2026-10-24T04:00:22Z",
+      "source_name": "YouTube Data API",
+      "source_type": "video",
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.8,
+      "content_type": "reported",
+      "content_label": "Reported news — verify",
+      "classification_note": "A report is not confirmation; check the linked sources.",
+      "classification_is_heuristic": true,
+      "rank": 32
     },
     {
       "video_id": "OFsVx9Dq5zg",
@@ -4261,32 +1411,14 @@
       "published": "2026-10-23T21:57:21Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Tornozeleira Cia",
-      "topic_trend_score": 16.7,
-      "video_rank_score": 33.0,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.7,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 30
-    },
-    {
-      "video_id": "cnBgjKl9Ny4",
-      "title": "Rockstar Tried to Kill GTA 6&#39;s Weapon Wheel (GTA VI)",
-      "url": "https://www.youtube.com/watch?v=cnBgjKl9Ny4",
-      "thumbnail_url": "https://i.ytimg.com/vi/cnBgjKl9Ny4/hqdefault.jpg",
-      "channel_name": "GTA 6 Rewind",
-      "published": "2026-10-24T04:04:38Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 Tried Kill",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 33.0,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 31
+      "rank": 33
     },
     {
       "video_id": "1HUICshme6A",
@@ -4297,14 +1429,14 @@
       "published": "2026-10-23T23:10:34Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Vai Virar",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 32.9,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.7,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 32
+      "rank": 34
     },
     {
       "video_id": "mQXuzHelBUI",
@@ -4316,13 +1448,13 @@
       "source_name": "YouTube Data API",
       "source_type": "video",
       "topic": "GTA 6 general discussion",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 32.9,
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.7,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
       "classification_is_heuristic": true,
-      "rank": 33
+      "rank": 35
     },
     {
       "video_id": "WdfIfpzxyRQ",
@@ -4333,45 +1465,9 @@
       "published": "2026-10-24T01:01:37Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Ishowspeed Thinks",
-      "topic_trend_score": 16.5,
-      "video_rank_score": 32.9,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 34
-    },
-    {
-      "video_id": "K-WO8ZNJp30",
-      "title": "GTA 6 Me Chalega Real Spotify?! 😱 Company &amp; Army Ko Mili Chhutti!",
-      "url": "https://www.youtube.com/watch?v=K-WO8ZNJp30",
-      "thumbnail_url": "https://i.ytimg.com/vi/K-WO8ZNJp30/hqdefault.jpg",
-      "channel_name": "Bhuvicade",
-      "published": "2026-10-24T09:25:16Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 Chalega Real",
-      "topic_trend_score": 15.5,
-      "video_rank_score": 32.4,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 35
-    },
-    {
-      "video_id": "KzXG8jRnwwM",
-      "title": "GTA 6 Looks SO REAL It’s Actually INSANE! 🤯🔥 #GTA6 #Shorts",
-      "url": "https://www.youtube.com/watch?v=KzXG8jRnwwM",
-      "thumbnail_url": "https://i.ytimg.com/vi/KzXG8jRnwwM/hqdefault.jpg",
-      "channel_name": "AsterBoy Gaming",
-      "published": "2026-10-24T05:52:46Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6 Looks Real",
-      "topic_trend_score": 15.5,
-      "video_rank_score": 32.3,
+      "topic": "GTA 6 general discussion",
+      "topic_trend_score": 75.0,
+      "video_rank_score": 79.7,
       "content_type": "unverified",
       "content_label": "Unverified video",
       "classification_note": "Not enough information in the title to classify confidently.",
@@ -4379,76 +1475,22 @@
       "rank": 36
     },
     {
-      "video_id": "MAv3H2owKUE",
-      "title": "GTA 6 Officially Eligible For Game Of The Year 2026! 🏆#shorts #gta #gta5",
-      "url": "https://www.youtube.com/watch?v=MAv3H2owKUE",
-      "thumbnail_url": "https://i.ytimg.com/vi/MAv3H2owKUE/hqdefault.jpg",
-      "channel_name": "Acker ex Gaming ",
-      "published": "2026-10-24T07:00:34Z",
+      "video_id": "M4jWKClSrcM",
+      "title": "GTA 6 Vice City: Official vs Fan Theory",
+      "url": "https://www.youtube.com/watch?v=M4jWKClSrcM",
+      "thumbnail_url": "https://i.ytimg.com/vi/M4jWKClSrcM/hqdefault.jpg",
+      "channel_name": "Vice Files",
+      "published": "2026-10-23T22:15:59Z",
       "source_name": "YouTube Data API",
       "source_type": "video",
-      "topic": "GTA 6 Officially Eligible",
-      "topic_trend_score": 15.5,
-      "video_rank_score": 32.3,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
+      "topic": "GTA 6 Vice City",
+      "topic_trend_score": 39.7,
+      "video_rank_score": 51.4,
+      "content_type": "speculation",
+      "content_label": "Speculation / theory",
+      "classification_note": "Title-based classification; not independently verified.",
       "classification_is_heuristic": true,
       "rank": 37
-    },
-    {
-      "video_id": "PapYG-ooPgM",
-      "title": "NPC daily routine #gta6 #gta6trailer #gta6online #arthurmorgan #gamenews #gameplay #grandtheftauto",
-      "url": "https://www.youtube.com/watch?v=PapYG-ooPgM",
-      "thumbnail_url": "https://i.ytimg.com/vi/PapYG-ooPgM/hqdefault.jpg",
-      "channel_name": "Mr De La Rey",
-      "published": "2026-10-24T08:43:00Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6",
-      "topic_trend_score": 0,
-      "video_rank_score": 20.0,
-      "content_type": "gameplay",
-      "content_label": "Gameplay / guide / analysis",
-      "classification_note": "Title-based classification; check whether this is actual gameplay or pre-release analysis.",
-      "classification_is_heuristic": true,
-      "rank": 38
-    },
-    {
-      "video_id": "zaV2os4sOOo",
-      "title": "GTA X Free Fire☠️| INSANE Gameplay",
-      "url": "https://www.youtube.com/watch?v=zaV2os4sOOo",
-      "thumbnail_url": "https://i.ytimg.com/vi/zaV2os4sOOo/hqdefault.jpg",
-      "channel_name": "SURAJ RAWANI ",
-      "published": "2026-10-24T05:38:29Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6",
-      "topic_trend_score": 0,
-      "video_rank_score": 19.9,
-      "content_type": "gameplay",
-      "content_label": "Gameplay / guide / analysis",
-      "classification_note": "Title-based classification; check whether this is actual gameplay or pre-release analysis.",
-      "classification_is_heuristic": true,
-      "rank": 39
-    },
-    {
-      "video_id": "AOqn1ZR290k",
-      "title": "GTA6 Map Compare to Another GTA Map #gta",
-      "url": "https://www.youtube.com/watch?v=AOqn1ZR290k",
-      "thumbnail_url": "https://i.ytimg.com/vi/AOqn1ZR290k/hqdefault.jpg",
-      "channel_name": "BeingSano",
-      "published": "2026-10-24T03:30:00Z",
-      "source_name": "YouTube Data API",
-      "source_type": "video",
-      "topic": "GTA 6",
-      "topic_trend_score": 0,
-      "video_rank_score": 19.8,
-      "content_type": "unverified",
-      "content_label": "Unverified video",
-      "classification_note": "Not enough information in the title to classify confidently.",
-      "classification_is_heuristic": true,
-      "rank": 40
     }
   ]
 }
