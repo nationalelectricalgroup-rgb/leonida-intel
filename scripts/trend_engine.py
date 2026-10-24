@@ -222,11 +222,27 @@ def canonical_topic(title: str) -> str | None:
 
     # Common false positives where GTA is only a comparison, parody, or side mention.
     reject_phrases = (
-        "gta 6 style", "gta-style", "gta 6 inspired", "gta 6 inspired",
-        "gta 6 parody", "parody trailer", "meme coin", "shrek 2",
-        "style trailer", "like gta 6", "gta 6-like", "gta 6 vs gta 5",
+        "gta 6 style", "gta style", "gta 6 inspired", "gta vi inspired",
+        "gta 6 parody", "gta vi parody", "parody trailer", "meme coin",
+        "shrek 2", "style trailer", "like gta 6", "gta 6 like",
+        "gta 6 vs gta 5", "gta vi vs gta v", "games like gta 6",
+        "gta 6 lookalike", "gta 6 clone", "gta 6 competitor",
     )
     if any(phrase in lower for phrase in reject_phrases):
+        return None
+
+    # Do not treat a passing comparison or a generic release/news phrase as GTA VI
+    # coverage. Require a meaningful game-specific subject cue.
+    context_terms = (
+        "release", "launch", "trailer", "map", "vice city", "leonida",
+        "jason", "lucia", "character", "gameplay", "mission", "story",
+        "online", "pc", "platform", "vehicle", "car", "soundtrack",
+        "music", "leak", "rumour", "rumor", "theory", "speculation",
+        "rockstar", "edition", "preorder", "pre-order", "price", "delay",
+        "date", "review", "hands-on", "preview", "feature", "mechanic",
+        "world", "location", "weapon", "activity", "business", "wanted",
+    )
+    if not any(re.search(r"\b" + re.escape(term) + r"\b", lower) for term in context_terms):
         return None
 
     # Require a direct game-specific cue. Avoid generating categories from arbitrary
@@ -250,7 +266,8 @@ def classify_evidence(title: str, url: str) -> str:
     lower = title.lower()
     host = urllib.parse.urlparse(url).netloc.lower()
     if any(term in lower for term in (
-        "debunked", "fake leak", "false rumour", "false rumor", "fact check"
+        "debunked", "fake leak", "false rumour", "false rumor", "fact check",
+        "rumour debunked", "rumor debunked", "not true", "hoax exposed",
     )):
         return "debunked"
     if any(term in lower for term in (
@@ -258,7 +275,7 @@ def classify_evidence(title: str, url: str) -> str:
         "theory", "speculation", "might", "could be"
     )):
         return "rumour_or_theory"
-    if any(host.endswith(domain) for domain in ("rockstargames.com", "take2games.com")):
+    if host == "rockstargames.com" or host.endswith(".rockstargames.com") or host == "take2games.com" or host.endswith(".take2games.com"):
         return "official_source_needs_review"
     return "reported_or_unverified"
 
@@ -270,9 +287,10 @@ def classify_video(title: str, url: str, channel_name: str = "") -> dict:
     official_channel = any(term in (channel_name or "").lower() for term in (
         "rockstar games", "rockstar north"
     ))
-    official_url = any(host.endswith(domain) for domain in (
-        "rockstargames.com", "take2games.com"
-    ))
+    official_url = (
+        host == "rockstargames.com" or host.endswith(".rockstargames.com")
+        or host == "take2games.com" or host.endswith(".take2games.com")
+    )
 
     if official_channel or official_url:
         label = "Official source — verify"
@@ -450,15 +468,20 @@ def main() -> None:
         mention_count = len(obs)
 
         # Transparent heuristic, not platform-wide popularity.
+        # Diminishing returns stop one busy feed query from pushing everything to 100.
+        # Distinct domains and independent signal types contribute, but are not proof
+        # of truth or platform-wide popularity.
         momentum = min(
-            100,
-            mention_count * 12 + max(0, distinct_domains - 1) * 8 + len(source_types) * 5,
+            90.0,
+            10.0 * min(4, mention_count) ** 0.5
+            + 5.0 * min(5, max(0, distinct_domains - 1))
+            + 4.0 * min(2, len(source_types)),
         )
-        old_score = old.get("trend_score", 0)
+        old_score = float(old.get("trend_score", 0) or 0)
         if obs:
-            trend_score = round(min(100, momentum * 0.7 + old_score * 0.3), 1)
+            trend_score = round(min(100.0, momentum * 0.8 + old_score * 0.2), 1)
         else:
-            trend_score = round(old_score * 0.72, 1)
+            trend_score = round(old_score * 0.65, 1)
 
         previous_active_days = old.get("active_days", 0)
         active_days = (
@@ -489,7 +512,7 @@ def main() -> None:
 
         evidence_counts = Counter(item["evidence_status"] for item in obs)
         if not obs:
-            evidence_status = old.get("evidence_status", "unverified")
+            evidence_status = "No new sources today — previous status not re-verified"
         elif evidence_counts.get("debunked", 0) == len(obs):
             evidence_status = "debunked — review sources"
         elif evidence_counts.get("official_source_needs_review", 0) == len(obs):
@@ -503,7 +526,7 @@ def main() -> None:
 
         samples = sorted(
             obs,
-            key=lambda item: item.get("published", ""),
+            key=lambda item: parse_date(item.get("published", "")) or datetime.min.replace(tzinfo=timezone.utc),
             reverse=True,
         )[:5]
 
@@ -524,7 +547,7 @@ def main() -> None:
             "active_days": active_days,
             "inactive_days": inactive_days,
             "samples": samples,
-            "trend_score_method": "Heuristic from matching feed items, distinct domains, signal types, and prior score; not platform-wide search volume.",
+            "trend_score_method": "Heuristic with diminishing returns from matching feed items, distinct domains, signal types and a small prior-score component; not platform-wide search volume or truth confidence.",
         })
 
     order = {"active": 0, "cooling": 1, "archived": 2}
@@ -598,7 +621,9 @@ def main() -> None:
                 "Video ranks are heuristic scores based on topic score and freshness, not YouTube view counts or platform-wide popularity.",
                 "Video classifications are title/source heuristics and are not fact verification.",
                 "A relevance filter rejects obvious parody/comparison false positives; manual review is still needed.",
-                "Topic evidence labels summarize source-title heuristics and do not verify every claim.",
+                "Topic evidence labels summarize title/source heuristics and do not verify claims.",
+                "A topic with no new sources today is explicitly marked as not re-verified today.",
+                "Trend scores use diminishing returns; high scores do not mean a claim is true.",
                 "Official-looking channel labels should be checked; an official source does not automatically make every claim true.",
                 "Only titles, URLs, thumbnail URLs, channel names and feed metadata are retained; no full article text or video is copied.",
             ],
