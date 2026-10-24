@@ -471,15 +471,31 @@ def main() -> None:
         # Diminishing returns stop one busy feed query from pushing everything to 100.
         # Distinct domains and independent signal types contribute, but are not proof
         # of truth or platform-wide popularity.
+        
         momentum = min(
-            90.0,
+            100.0,
             10.0 * min(4, mention_count) ** 0.5
             + 5.0 * min(5, max(0, distinct_domains - 1))
             + 4.0 * min(2, len(source_types)),
         )
         old_score = float(old.get("trend_score", 0) or 0)
+
+        freshness_score = 100.0 if obs else 0.0
+        source_quality_score = min(100.0, 40.0 + 15.0 * len(source_types))
+        relevance_score = 100.0
+        coverage_score = min(100.0, 25.0 * mention_count)
+        diversity_score = min(100.0, 25.0 * distinct_domains)
+
+        current_score = (
+            freshness_score * 0.30
+            + source_quality_score * 0.25
+            + relevance_score * 0.20
+            + coverage_score * 0.15
+            + diversity_score * 0.10
+        )
+
         if obs:
-            trend_score = round(min(100.0, momentum * 0.8 + old_score * 0.2), 1)
+            trend_score = round(current_score * 0.8 + old_score * 0.2, 1)
         else:
             trend_score = round(old_score * 0.65, 1)
 
